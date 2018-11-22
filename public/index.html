@@ -6,29 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Young Hee PORTFOLIO Site</title>
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylsheet" src="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/main.css">
   <script defer src="/__/firebase/5.5.9/firebase-app.js"></script>
   <script defer src="/__/firebase/5.5.9/firebase-auth.js"></script>
   <script defer src="/__/firebase/5.5.9/firebase-database.js"></script>
   <script defer src="/__/firebase/5.5.9/firebase-messaging.js"></script>
   <script defer src="/__/firebase/5.5.9/firebase-storage.js"></script>
   <script defer src="/__/firebase/init.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
   <header>
+    <video autoplay loop>
+      <source src="img/main_video.mp4" type="video/mp4">
+    </video>
     <div class="wrap">
-      <div class="top_menu">
-        <div class="ham_menu">
-
-        </div>
-        <div class="logo">
-          <img src="img/logo.jpg" alt="main_logo">
-        </div>
-      </div>
+      <ul class="top_menu clear">
+        <li class="ham_menu">
+          <span class="fas fa-bars"></span>
+        </li>
+        <li class="logo">
+          <a href="index.html" alt="main">
+            <!--<img src="img/logo.png" alt="main_logo">-->
+            <span class="logo_txt"><span class="logo_b">Y</span>OUNG <span class="logo_b">H</span>EE</span>
+          </a>
+        </li>
+      </ul>
       <div class="main_txt">
         <p class="title"><span class="point_txt">WEB</span> PUBLISHER</p>
         <p class="sub_title">웹 포트폴리오 사이트입니다. 방문해주셔서 감사합니다.</p>
@@ -37,7 +48,72 @@
         </div>
       </div>
     </div>
+    <div class="sub_menu">
+      <div class="sub_logo">
+        <a href="index.html">
+          <img src="img/sub_logo.jpg" alt="sub logo">
+        </a>
+      </div>
+      <div class="sub_menu_lists">
+        <ul class="sub_menu_list">
+          <li>
+            <div class="menu_icon"><img src="img/sub_menu_icon/images/intro.png"></div><span>INTRO</span>
+          </li>
+          <li>
+            <div class="menu_icon"><img src="img/sub_menu_icon/images/keyword.png"></div><span>KEYWORD</span>
+          </li>
+          <li>
+            <div class="menu_icon"><img src="img/sub_menu_icon/images/portfolio.png"></div><span>PORTFOLIO</span>
+          </li>
+          <li>
+            <div class="menu_icon"><img src="img/sub_menu_icon/images/skills.png"></div><span>SKILLS</span>
+          </li>
+          <li>
+            <div class="menu_icon"><img src="img/sub_menu_icon/images/special.png"></div><span>SPECIAL NOTE</span>
+          </li>
+        </ul>
+      </div>
+      <div class="menu_close"><img src="img/sub_menu_icon/sub_close.png" alt="close"></div>
+    </div>
   </header>
+  <section>
+    <div class="about">
+      <div class="about_txt clear">
+        <ul>
+          <li>
+            ABOUT ME
+          </li>
+          <li>
+            <img src="img/sub_menu_icon/images/phone.png"alt="phone">
+            <span>PHONE</span>
+            <span>010 8862 6236</span>
+          </li>
+          <li>
+            <img src="img/sub_menu_icon/images/email.png"alt="email">
+            <span>EMAIL</span> 
+            <span>jangyh0722@naver.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="keyword">
+        <img src="img/about_iphone.png" alt="keword_iphone"> 
+        <span>Keyword</span>
+        <ul class="keword_box">
+          <li class="box_set box1">1990</li>
+          <li class="box_set box2">Male</li>
+          <li class="box_set box3">Gimpo</li>
+          <li class="box_set box4">Jang Young Hee</li>
+          <li class="box_set box5">Coding</li>
+          <li class="box_set box6">Web</li>
+          <li class="box_set box7">Publisher</li>
+        </ul>
+      </div>
+      <div class="map clear">
+        <div class="map_area"></div>
+      </div>
+    </div>
+
+  </section>
 
   <script defer src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
   <script defer src="js/main.js"></script>
