@@ -63,7 +63,7 @@ header{color:#fff; height: 100%; margin-bottom:160px; position: relative;}
 
 
 section{width:100%;}
-.about{width: 100%; }
+.about{width: 100%;}
 .about .about_txt{width:50%; float: left;}
 .about .keyword img{
     position: absolute;
@@ -106,16 +106,16 @@ section{width:100%;}
     height: 350px;
 }
 .about .keyword .keword_box li{padding:10px 7px; border-radius: 7px; float: left; display: table-cell; vertical-align: middle;}
-.about .keyword .keword_box .box1{width:110px; background-color: #488aff;position: absolute;  top:5%; left: 5%;
-    transform: translate(-5%, -5%); 
-    -webkit-transform: translate(-5%, -5%); 
-    -moz-transform: translate(-5%, -5%); 
-    -o-transform: translate(-5%, -5%); }
-.about .keyword .keword_box .box2{width:110px; background-color: #32db64; position: absolute;  top:5%; left: 90%;
-    transform: translate(-90%, -5%); 
-    -webkit-transform: translate(-90%, -5%); 
-    -moz-transform: translate(-90%, -5%); 
-    -o-transform: translate(-90%, -5%); }
+.about .keyword .keword_box .box1{width:110px; background-color: #488aff;position: absolute;  top:5%; left: 8%;
+    transform: translate(-8%, -5%); 
+    -webkit-transform: translate(-8%, -5%); 
+    -moz-transform: translate(-8%, -5%); 
+    -o-transform: translate(-8%, -5%); }
+.about .keyword .keword_box .box2{width:110px; background-color: #32db64; position: absolute;  top:5%; left: 93%;
+    transform: translate(-93%, -5%); 
+    -webkit-transform: translate(-93%, -5%); 
+    -moz-transform: translate(-93%, -5%); 
+    -o-transform: translate(-93%, -5%); }
 .about .keyword .keword_box .box3{width:130px; background-color: #f53d3d; position: absolute; top:27%; left: 50%;
     transform: translate(-50%, -27%); 
     -webkit-transform: translate(-50%, -27%); 
@@ -126,11 +126,11 @@ section{width:100%;}
     -webkit-transform: translate(-50%, -49%); 
     -moz-transform: translate(-50%, -49%); 
     -o-transform: translate(-50%, -49%); }
-.about .keyword .keword_box .box5{width:130px; background-color: #32db64; position: absolute; top:71%; left: 5%;
-    transform: translate(-5%, -71%); 
-    -webkit-transform: translate(-5%, -71%); 
-    -moz-transform: translate(-5%, -71%); 
-    -o-transform: translate(-5%, -71%); }
+.about .keyword .keword_box .box5{width:130px; background-color: #32db64; position: absolute; top:71%; left: 3%;
+    transform: translate(-3%, -71%); 
+    -webkit-transform: translate(-3%, -71%); 
+    -moz-transform: translate(-3%, -71%); 
+    -o-transform: translate(-3%, -71%); }
 .about .keyword .keword_box .box6{width:110px; background-color: #488aff; position: absolute; top:71%; left: 100%;
     transform: translate(-100%, -71%); 
     -webkit-transform: translate(-100%, -71%); 
@@ -141,10 +141,12 @@ section{width:100%;}
     -webkit-transform: translate(-50%, -93%); 
     -moz-transform: translate(-50%, -93%); 
     -o-transform: translate(-50%, -93%); }
-.about .map{width:50%; float: right;}
 .about .about_txt{height: 400px; display: table;text-align: center;}
 .about .about_txt ul{display: table-cell; vertical-align: middle;}
 .about .about_txt ul li:first-child{font-size: 46px; color:#222; font-weight: 400; letter-spacing: 20px; margin-bottom:0.5%;}
 .about .about_txt ul li:nth-child(2), .about .about_txt ul li:nth-child(3){margin-bottom: 0.5%;}
 .about .about_txt ul li:nth-child(2) span:nth-child(2), .about .about_txt ul li:nth-child(3) span:nth-child(2){font-size: 16px; color:#222; font-weight: 400; letter-spacing: 2px; margin-right: 1%;}
 .about .about_txt ul li:nth-child(2) span:nth-child(3), .about .about_txt ul li:nth-child(3) span:nth-child(3){font-size: 14px; color:#222; font-weight: 400; letter-spacing: 1px; margin-bottom:10%;}
+
+.about .map{width:50%; float: right; padding: 70px 0;}
+.about .map .map_area{width:100%; height:260px;}
