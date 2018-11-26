@@ -156,16 +156,18 @@ section{width:100%;}
 .about .map{width:50%; float: right; padding: 70px 0;}
 #map{width:100%; height:260px; background-color: #000;}
 
-.port .some li{width:56.25%; position: relative;}
+
+.port .some li{width:56.25%; position: relative; text-align: center; float: left;}
+.port .some li:last-child{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; float: right; width:43.75%; }
 .port .some li > div{background-color: #000;}
 .port .some li > img{opacity: 0.8; width:100%;}
-.port .some li > div .button{position: absolute; top:80%; left: 50%; background-color: #fff; color:#222; letter-spacing: 1px; cursor: pointer;
-    transform: translate(-50%, -80%); 
-    -webkit-transform: translate(-50%, -80%); 
-    -moz-transform: translate(-50%, -80%); 
+.port .some li > div .button{position: absolute; top:80%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
+    transform: translate(-50%, -80%);
+    -webkit-transform: translate(-50%, -80%);
+    -moz-transform: translate(-50%, -80%);
     -o-transform: translate(-50%, -80%); }
 .port .some .bor{position: absolute; border:1px solid #fff; width: 96%; height: 80%; top:50%; left: 50%;
-    transform: translate(-50%, -50%); 
-    -webkit-transform: translate(-50%, -50%); 
-    -moz-transform: translate(-50%, -50%); 
-    -o-transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);}

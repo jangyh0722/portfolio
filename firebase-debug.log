@@ -27,3 +27,36 @@
 [debug] [2018-11-26T05:50:51.803Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-11-26T08:29:00.126Z] Error: read ECONNRESET
+    at TLSWrap.onread (net.js:622:25)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-11-26T08:31:51.516Z] ----------------------------------------------------------------------
+[debug] [2018-11-26T08:31:51.516Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-11-26T08:31:51.516Z] CLI Version:   5.1.1
+[debug] [2018-11-26T08:31:51.516Z] Platform:      win32
+[debug] [2018-11-26T08:31:51.516Z] Node Version:  v8.12.0
+[debug] [2018-11-26T08:31:51.516Z] Time:          Mon Nov 26 2018 17:31:51 GMT+0900 (대한민국 표준시)
+[debug] [2018-11-26T08:31:51.516Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-11-26T08:31:51.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-11-26T08:31:51.563Z] > authorizing via signed-in user
+[debug] [2018-11-26T08:31:51.563Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-11-26T08:31:51.563Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-11-26T08:31:51.563Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-11-26T08:31:51.969Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T08:31:52.000Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
+
+[debug] [2018-11-26T08:31:53.280Z] <<< HTTP RESPONSE 200
+[debug] [2018-11-26T08:31:53.284Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio  
+ 
+[debug] [2018-11-26T08:31:54.452Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\portfolio'...
+[info] 
+[debug] [2018-11-26T08:31:54.760Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/207039781665/clients/_:getWebAppConfig  
+ 
+[debug] [2018-11-26T08:31:55.496Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
