@@ -65,7 +65,8 @@ header{color:#fff; height: 1130px;  position: relative;}
 section{width:100%;}
 .about{width: 100%;}
 .about .about_txt{width:50%; float: left;}
-.about .keyword{position: absolute; top:0; left: 50%; width:350px; height:500px; 
+.about .about_txt ul li img{margin-right:5px;}
+.about .keyword{position: absolute; top:0; left: 50%; width:350px; height:500px;  z-index: 1;
     transform: translateX(-50%); 
     -webkit-transform: translateX(-50%); 
     -moz-transform: translateX(-50%); 
@@ -154,19 +155,23 @@ section{width:100%;}
 .about .about_txt ul li:nth-child(2) span:nth-child(2), .about .about_txt ul li:nth-child(3) span:nth-child(2){font-size: 16px; color:#222; font-weight: 400; letter-spacing: 2px; margin-right: 1%;}
 .about .about_txt ul li:nth-child(2) span:nth-child(3), .about .about_txt ul li:nth-child(3) span:nth-child(3){font-size: 14px; color:#222; font-weight: 400; letter-spacing: 1px; margin-bottom:10%;}
 .about .map{width:50%; float: right; padding: 70px 0;}
-#map{width:100%; height:260px; background-color: #000;}
+#map{width:82%; height:260px; background-color: #000; float: right;}
 
-
-.port .some li{width:56.25%; position: relative; text-align: center; float: left;}
-.port .some li:last-child{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; float: right; width:43.75%; }
-.port .some li > div{background-color: #000;}
-.port .some li > img{opacity: 0.8; width:100%;}
+.port{height: 600px;}
+.port .some{float: left; width:56.25%;}
+.port .some li{width:100%; position: relative; text-align: center; float: left;}
+.port .port_txt{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; float: right; width:43.75%;  padding:265.5px 0;}
+.port .some li > div{background-color: #000; overflow: hidden;}
+.port .some li > div > img{opacity: 0.8; width:100%;}
+.port .some li > div > img:hover{opacity: 0.5; -webkit-transform:scale(1.03);transform:scale(1.03); -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
 .port .some li > div .button{position: absolute; top:80%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
     transform: translate(-50%, -80%);
     -webkit-transform: translate(-50%, -80%);
     -moz-transform: translate(-50%, -80%);
-    -o-transform: translate(-50%, -80%); }
-.port .some .bor{position: absolute; border:1px solid #fff; width: 96%; height: 80%; top:50%; left: 50%;
+    -o-transform: translate(-50%, -80%); 
+    display: none;
+}
+.port .some .bor{position: absolute; border:1px solid #fff; width: 95%; height: 80%; top:50%; left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);

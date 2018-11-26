@@ -9,8 +9,9 @@ $(".menu_close").click(function(){
     $(".top_menu").stop().delay(300).animate({"opacity": 1});
 });
 
-$(".port .some").each("li").hover(function(){
-    $(this).attr("img").stop().animate({"opacity": 0.7}, 500)
+
+$(".port .some li > div > img").hover(function(){
+    $(".port .some li > div .button").css({"display":"block"});
 }, function(){
-    $(this).attr("img").stop().animate({"opacity": 0.8}, 500)
+    $(".port .some li > div .button").css({"display":"none"});
 });

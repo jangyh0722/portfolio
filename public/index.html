@@ -12,14 +12,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/main.css">
-  <script defer src="/__/firebase/6.1.1/firebase-app.js"></script>
-  <script defer src="/__/firebase/6.1.1/firebase-auth.js"></script>
-  <script defer src="/__/firebase/6.1.1/firebase-database.js"></script>
-  <script defer src="/__/firebase/6.1.1/firebase-messaging.js"></script>
-  <script defer src="/__/firebase/6.1.1/firebase-storage.js"></script>
-  <script defer src="/__/firebase/init.js"></script>
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -108,13 +103,12 @@
           <li class="box_set box7">Publisher</li>
         </ul>
       </div>
-
       <div class="map">
-        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=DyW9gUFvhrurcH3uceB3&submodules=geocoder"></script>
-        <div class="map_area" id="map">
+          <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=DyW9gUFvhrurcH3uceB3&submodules=geocoder"></script>
+        <div class="map_area" id="map"></div>
           <script>
-            var map = new naver.maps.Map('maps');
-            var myaddress = ' 서울 마포구 서강로 144 '; // 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
+            var map = new naver.maps.Map('map');
+            var myaddress = ' 경기도 김포시 김포한강11로 179 '; // 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
             naver.maps.Service.geocode({
               address: myaddress
             }, function (status, response) {
@@ -134,8 +128,7 @@
               });
 
             });
-          </script>
-        </div>
+          </script>  
       </div>
     </div>
 
@@ -157,16 +150,17 @@
             <div class="button">VIEW</div>
           </div>
         </li>
-        <li>
-          PORTFOLIO
-        </li>
+
       </ul>
+      <div class="port_txt">
+        PORTFOLIO
+      </div>
     </div>
 
   </section>
 
 
-  <script defer src="js/main.js"></script>
+  <script  src="js/main.js"></script>
 </body>
 
 </html>
