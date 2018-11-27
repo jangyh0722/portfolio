@@ -63,6 +63,8 @@ header{color:#fff; height: 1130px;  position: relative;}
 
 
 section{width:100%;}
+
+/********************  about me 영역  *******************/
 .about{width: 100%;}
 .about .about_txt{width:50%; float: left;}
 .about .about_txt ul li img{margin-right:5px;}
@@ -105,7 +107,7 @@ section{width:100%;}
     -o-transform: translateX(-50%); 
     font-size: 20px;
     color:#fff;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     letter-spacing:2px;
     padding:10px 7px;
@@ -157,10 +159,18 @@ section{width:100%;}
 .about .map{width:50%; float: right; padding: 70px 0;}
 #map{width:82%; height:260px; background-color: #000; float: right;}
 
-.port{height: 600px;}
+
+/********************  portfolio 영역  *******************/
+.port{position: relative;}
+.box_wrap{position: absolute; top:50%; left: 72%;
+    transform: translate(-72%, -50%);
+    -webkit-transform: translate(-72%, -50%);
+    -moz-transform: translate(-72%, -50%);
+    -o-transform: translate(-72%, -50%); 
+}
 .port .some{float: left; width:56.25%;}
-.port .some li{width:100%; position: relative; text-align: center; float: left;}
-.port .port_txt{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; float: right; width:43.75%;  padding:265.5px 0;}
+.port .some > li{width:100%; position: relative; text-align: center; float: left;}
+.port .port_txt{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; float: right; width:43.75%;  }
 .port .some li > div{background-color: #000; overflow: hidden;}
 .port .some li > div > img{opacity: 0.8; width:100%;}
 .port .some li > div > img:hover{opacity: 0.5; -webkit-transform:scale(1.03);transform:scale(1.03); -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
@@ -176,3 +186,44 @@ section{width:100%;}
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);}
+
+/********************  skills 영역  *******************/
+.skills{width:100%; height: 600px; }
+.skills_lf{width:43.75%; height:inherit; float: left; text-align: center; display: table;}
+.skills_lf .inner > span{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; display: block; margin-bottom: 60px;}
+.skills_lf .inner .prev{float: left; margin-left: 50px; cursor: pointer;}
+.skills_lf .inner .next{float: right; margin-right: 50px; cursor: pointer;}
+.skills_lf .inner{height:auto; display: table-cell; vertical-align: middle; position: relative;}
+.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:450px; height:68px; overflow: hidden;}
+.skills_lf .inner .skills_li_po .skills_wrap{width:117%; position: absolute; top:0; left: 0; width:750px;}
+.skills_ban li{width: 60px; height: 68px; float: left; margin-left: 100px;}
+.skills_ban li:first-child{margin-left:50px;}
+.skills_ban li img{width: 100%;}
+
+.skills_rig{width:56.25%; height: inherit; float: right; background-color: #222; display: table; color:#fff;}
+.skills_rig .rig_inner{width:inherit; height: inherit; display: table-cell; vertical-align: middle;}
+.skills_rig .rig_inner .skills_bor{border:1px solid #fff; width:94%; height: 89%; margin:0 auto;}
+.skills_rig .rig_inner .skills_bor .skills_wrap{width:70%; height: 100%; margin:0 auto; display: table;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .prog_inner{width:inherit; height: inherit; display: table-cell; vertical-align: middle;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog{width:100%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog > li {margin-bottom: 20px;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog > li:last-child {margin-bottom: 0px;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li span{font-size:18px; font-weight: 400;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li{ float: left;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:first-child{width:89%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:first-child > div{padding-top: 10px;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:last-child{margin:31px 0 0 10px;}
+
+.prog_inner1, .prog_inner4 {background: linear-gradient( to right, #00ffcc, #03c5fd ); color:#00ffcc;}
+.prog_inner2, .prog_inner5 {background: linear-gradient( to right, #009cff, #ae00ff ); color:#009cff;}
+.prog_inner3, .prog_inner6 {background: linear-gradient( to right, #942bff, #ff6868 ); color:#942bff;}
+
+.prog_inner1{width:90%;}
+.prog_inner2{width:90%;}
+.prog_inner3{width:40%;}
+.prog_inner4{width:30%;}
+.prog_inner5{width:65%;}
+.prog_inner6{width:65%;}
+
+/********************  special note 영역  *******************/
+.special{background-image: url()}

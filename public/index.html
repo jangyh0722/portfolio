@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -104,35 +104,35 @@
         </ul>
       </div>
       <div class="map">
-          <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=DyW9gUFvhrurcH3uceB3&submodules=geocoder"></script>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=DyW9gUFvhrurcH3uceB3&submodules=geocoder"></script>
         <div class="map_area" id="map"></div>
-          <script>
-            var map = new naver.maps.Map('map');
-            var myaddress = ' 경기도 김포시 김포한강11로 179 '; // 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
-            naver.maps.Service.geocode({
-              address: myaddress
-            }, function (status, response) {
-              if (status !== naver.maps.Service.Status.OK) {
-                return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
-              }
-              var result = response.result;
-              // 검색 결과 갯수: result.total
-              // 첫번째 결과 결과 주소: result.items[0].address
-              // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
-              var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
-              map.setCenter(myaddr); // 검색된 좌표로 지도 이동
-              // 마커 표시
-              var marker = new naver.maps.Marker({
-                position: myaddr,
-                map: map
-              });
-
+        <script>
+          var map = new naver.maps.Map('map');
+          var myaddress = ' 경기도 김포시 김포한강11로 179 '; // 도로명 주소나 지번 주소만 가능 (건물명 불가!!!!)
+          naver.maps.Service.geocode({
+            address: myaddress
+          }, function (status, response) {
+            if (status !== naver.maps.Service.Status.OK) {
+              return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
+            }
+            var result = response.result;
+            // 검색 결과 갯수: result.total
+            // 첫번째 결과 결과 주소: result.items[0].address
+            // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
+            var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
+            map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+            // 마커 표시
+            var marker = new naver.maps.Marker({
+              position: myaddr,
+              map: map
             });
-          </script>  
+
+          });
+        </script>
       </div>
     </div>
 
-    <div class="port">
+    <div class="port clear">
       <ul class="some">
         <li>
           <div>
@@ -152,15 +152,135 @@
         </li>
 
       </ul>
-      <div class="port_txt">
-        PORTFOLIO
+      <div class="box_wrap">
+        <div class="port_txt">
+          PORTFOLIO
+        </div>
       </div>
     </div>
 
+    <div class="skills">
+      <div class="skills_lf clear">
+        <div class="inner">
+          <span>SKILLS</span>
+          <div class="skills_li_po">
+            <div class="skills_wrap">
+              <ul class="skills_ban">
+                <li><img src="img/skill_icon/html.jpg"></li>
+                <li><img src="img/skill_icon/css.jpg"></li>
+                <li><img src="img/skill_icon/js.jpg"></li>
+                <li><img src="img/skill_icon/ps.jpg"></li>
+                <li><img src="img/skill_icon/ai.jpg"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="prev">
+            <img src="img/skill_icon/skills_lbtn.jpg">
+          </div>
+          <div class="next">
+            <img src="img/skill_icon/skills_rbtn.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="skills_rig">
+        <div class="rig_inner">
+          <div class="skills_bor">
+            <div class="skills_wrap">
+              <div class="prog_inner">
+                <ul class="skills_prog">
+                  <li>
+                    <ul class="in clear">
+                      <li>
+                        <span>HTML</span>
+                        <div class="prog">
+                          <div class="prog_inner1">.</div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="per">90%</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="in clear">
+                      <li>
+                        <span>CSS</span>
+                        <div class="prog">
+                          <div class="prog_inner2">.</div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="per">90%</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="in clear">
+                      <li>
+                        <span>jQuery</span>
+                        <div class="prog">
+                          <div class="prog_inner3">.</div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="per">40%</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="in clear">
+                      <li>
+                        <span>Javascript</span>
+                        <div class="prog">
+                          <div class="prog_inner4">.</div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="per">30%</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="in clear">
+                      <li>
+                        <span>Photoshop</span>
+                        <div class="prog">
+                          <div class="prog_inner5">.</div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="per">65%</span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="in clear">
+                      <li>
+                        <span>Illustrator</span>
+                        <div class="prog">
+                          <div class="prog_inner6">.</div>
+                        </div>
+                      </li>
+                      <li>
+                        <span class="per">65%</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="special">
+      
+
+    </div>
+
   </section>
-
-
-  <script  src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
