@@ -10,13 +10,16 @@ video {
     height: auto;
     z-index: -1;
 }
-header{color:#fff; height: 1130px;  position: relative;}
-.wrap{padding: 50px; }
+header{color:#fff; height: 1130px;}
+.top_menu, .main_txt{padding:50px; position: relative;}
 .wrap .top_menu .fas{margin-right:30px; font-size: 20px; cursor: pointer;}
-.wrap .top_menu li{float: left;}
+.wrap .top_menu li{float: left; }
+.dn_bg {background-color:#222; width:100%; height: 0; position:fixed; top:0; z-index: 1111; width:100%; }
 .wrap .top_menu .logo{padding-top:3px; cursor: pointer;}
 .wrap .top_menu .logo .logo_txt{font-size: 20px; line-height: 0; }
 .wrap .top_menu .logo .logo_txt .logo_b{font-weight: 900;}
+.wrap .top_menu .ham_menu .bars{cursor: pointer;}
+.wrap .top_menu .ham_menu .bars .ham{width:25px; height: 2px; background-color:#fff; margin:0 30px 7px 0; }
 .wrap .main_txt .title{font-size: 60px; font-weight: 600; margin:385px 0 10px 0; letter-spacing: -2px;}
 .wrap .main_txt .title .point_txt{color:#f3b47f;}
 .wrap .main_txt .sub_title{font-size: 16px; margin-bottom: 40px; letter-spacing: 10px;}
@@ -33,13 +36,14 @@ header{color:#fff; height: 1130px;  position: relative;}
     width:300px; 
     height: 100%;
     position: relative; 
-    position: absolute; 
+    position: fixed; 
     top:0; 
     left: -300px; 
     transform: translate(-300px, -0);
     -webkit-transform: translate(-300px, -0);
     -moz-transform: translate(-300px, -0);
     -o-transform: translate(-300px, -0);
+    z-index: 1111;
 }
 .sub_menu .sub_logo{height:15%;}
 .sub_menu .sub_logo img{position: absolute; top:5%; left:50%; transform: translate(-50%, -5%);}
@@ -88,7 +92,7 @@ section{width:100%; height: 969px;}
     font-size: 20px;
     font-weight: bold;
     position: absolute;
-    top:1085px;
+    top:1093px;
     left: 50%;
     transform: translateX(-50%); 
     -webkit-transform: translateX(-50%); 
@@ -173,7 +177,7 @@ section{width:100%; height: 969px;}
 .port .port_txt{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; float: right; width:43.75%;  }
 .port .some li > div{background-color: #000; overflow: hidden;}
 .port .some li > div > img{opacity: 0.8; width:100%;}
-.port .some li > div > img:hover{opacity: 0.5; -webkit-transform:scale(1.03);transform:scale(1.03); -webkit-transition:all 0.5s ease;transition:all 0.5s ease;}
+.port .some li > div > img:hover{opacity: 1; -webkit-transform:scale(1.03);transform:scale(1.03); -webkit-transition:all 0.7s ease;transition:all 0.5s ease;}
 .port .some li > div .button{position: absolute; top:80%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
     transform: translate(-50%, -80%);
     -webkit-transform: translate(-50%, -80%);
@@ -181,7 +185,7 @@ section{width:100%; height: 969px;}
     -o-transform: translate(-50%, -80%); 
     display: none;
 }
-.port .some .bor{position: absolute; border:1px solid #fff; width: 95%; height: 80%; top:50%; left: 50%;
+.port .some .port_bor{ z-index: 111; position: absolute; border:1px solid #fff; width: 95%; height: 80%; top:50%; left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -261,3 +265,8 @@ section{width:100%; height: 969px;}
   .foot .foot_list li{float: left;}
   .foot .foot_list li:nth-child(even){font-size:12px; margin:3px 15px;}
   .foot .foot_list li:nth-child(odd){letter-spacing: 1px; cursor: pointer;}
+  .foot .foot_list li:nth-child(odd):hover{color:#f3b47f;
+
+}
+
+/********************  modal 영역  *******************/

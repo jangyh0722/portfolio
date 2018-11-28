@@ -19,14 +19,18 @@
 </head>
 
 <body>
-  <header>
+  <header id="window0">
     <video autoplay loop>
       <source src="img/main_video.mp4" type="video/mp4">
     </video>
     <div class="wrap">
       <ul class="top_menu clear">
         <li class="ham_menu">
-          <span class="fas fa-bars"></span>
+          <div class="bars">
+            <div class="ham"></div>
+            <div class="ham"></div>
+            <div class="ham"></div>
+          </div>
         </li>
         <li class="logo">
           <a href="index.html" alt="main">
@@ -46,24 +50,24 @@
     <div class="sub_menu">
       <div class="sub_logo">
         <a href="index.html">
-          <img src="img/sub_logo.jpg" alt="sub logo">
+          <img src="img/sub_logo.png" alt="sub logo">
         </a>
       </div>
       <div class="sub_menu_lists">
         <ul class="sub_menu_list">
-          <li>
+          <li id="menu0">
             <div class="menu_icon"><img src="img/sub_menu_icon/images/intro.png"></div><span>INTRO</span>
           </li>
-          <li>
+          <li id="menu1">
             <div class="menu_icon"><img src="img/sub_menu_icon/images/keyword.png"></div><span>KEYWORD</span>
           </li>
-          <li>
+          <li id="menu2">
             <div class="menu_icon"><img src="img/sub_menu_icon/images/portfolio.png"></div><span>PORTFOLIO</span>
           </li>
-          <li>
+          <li id="menu3">
             <div class="menu_icon"><img src="img/sub_menu_icon/images/skills.png"></div><span>SKILLS</span>
           </li>
-          <li>
+          <li id="menu4">
             <div class="menu_icon"><img src="img/sub_menu_icon/images/special.png"></div><span>SPECIAL NOTE</span>
           </li>
         </ul>
@@ -72,7 +76,7 @@
     </div>
   </header>
   <section>
-    <div class="about clear">
+    <div class="about clear" id="window1">
       <div class="about_txt">
         <ul>
           <li>
@@ -132,11 +136,11 @@
       </div>
     </div>
 
-    <div class="port clear">
+    <div class="port clear" id="window2">
       <ul class="some">
         <li>
           <div>
-            <div class="bor">
+            <div class="port_bor">
             </div>
             <img src="img/port/twosome.png">
             <div class="button">VIEW</div>
@@ -144,7 +148,7 @@
         </li>
         <li>
           <div>
-            <div class="bor">
+            <div class="port_bor">
             </div>
             <img src="img/port/respon1.png">
             <div class="button">VIEW</div>
@@ -159,7 +163,7 @@
       </div>
     </div>
 
-    <div class="skills">
+    <div class="skills" id="window3">
       <div class="skills_lf clear">
         <div class="inner">
           <span>SKILLS</span>
@@ -274,7 +278,7 @@
       </div>
     </div>
 
-    <div class="special clear">
+    <div class="special clear" id="window4">
       <span>SPECIAL NOTE</span>
       <div class="mac"><img src="img/mac.png" alt="mac_img"></div>
       <div class="note_bor">
@@ -297,17 +301,17 @@
     <footer>
       <div class="foot">
         <ul class="foot_list clear">
-          <li>INTRO</li>
+          <li class="cl_menu0">INTRO</li>
           <li>|</li>
-          <li>KEYWORD</li>
+          <li class="cl_menu1">KEYWORD</li>
           <li>|</li>
-          <li>PORTFOLIO</li>
+          <li class="cl_menu2">PORTFOLIO</li>
           <li>|</li>
-          <li>SKILLS</li>
+          <li class="cl_menu3">SKILLS</li>
           <li>|</li>
-          <li>SPECIAL NOTE</li>
+          <li class="cl_menu4">SPECIAL NOTE</li>
         </ul>
-        <img src="img/sub_logo.jpg" alt="footer_logo">
+        <img src="img/sub_logo.png" alt="footer_logo">
         <address>&copy; Copyright 2018 Jangyh. All Rights Reserved.</address>
       </div>
     </footer>
@@ -315,5 +319,4 @@
   </section>
   <script src="js/main.js"></script>
 </body>
-
 </html>
