@@ -62,7 +62,7 @@ header{color:#fff; height: 1130px;  position: relative;}
 }
 
 
-section{width:100%;}
+section{width:100%; height: 969px;}
 
 /********************  about me 영역  *******************/
 .about{width: 100%;}
@@ -205,19 +205,27 @@ section{width:100%;}
 .skills_rig .rig_inner .skills_bor{border:1px solid #fff; width:94%; height: 89%; margin:0 auto;}
 .skills_rig .rig_inner .skills_bor .skills_wrap{width:70%; height: 100%; margin:0 auto; display: table;}
 .skills_rig .rig_inner .skills_bor .skills_wrap .prog_inner{width:inherit; height: inherit; display: table-cell; vertical-align: middle;}
-.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog{width:100%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog{width:100%; }
 .skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog > li {margin-bottom: 20px;}
 .skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog > li:last-child {margin-bottom: 0px;}
 .skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li span{font-size:18px; font-weight: 400;}
-.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li{ float: left;}
-.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:first-child{width:89%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li{ float: left; }
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:first-child{width:89%; }
 .skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:first-child > div{padding-top: 10px;}
-.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:last-child{margin:31px 0 0 10px;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:last-child{margin:31px 0 0 10px;position: relative;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li:last-child span{position: absolute;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li:nth-child(1) .in li:last-child,
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li:nth-child(2) .in li:last-child{left: -9%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li:nth-child(3) .in li:last-child{left: -53.5%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li:nth-child(4) .in li:last-child{left: -62.5%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li:nth-child(5) .in li:last-child,
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog li:nth-child(6) .in li:last-child{left: -31.2%;}
 
-.prog_inner1, .prog_inner4 {background: linear-gradient( to right, #00ffcc, #03c5fd ); color:#00ffcc;}
+.skills_rig .rig_inner .skills_bor .skills_wrap .skills_prog .in li .prog{width:auto;}
+
+.prog_inner1, .prog_inner4 {background: linear-gradient( to right, #00ffcc, #03c5fd ); color:#00ffcc; display: inline-block;}
 .prog_inner2, .prog_inner5 {background: linear-gradient( to right, #009cff, #ae00ff ); color:#009cff;}
 .prog_inner3, .prog_inner6 {background: linear-gradient( to right, #942bff, #ff6868 ); color:#942bff;}
-
 .prog_inner1{width:90%;}
 .prog_inner2{width:90%;}
 .prog_inner3{width:40%;}
@@ -226,4 +234,30 @@ section{width:100%;}
 .prog_inner6{width:65%;}
 
 /********************  special note 영역  *******************/
-.special{background-image: url()}
+.special{
+    height: 100%;
+    background-image: url("../img/bot_img.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+    
+  }
+  .special{position: relative; margin-bottom: 60px;}
+  .special span{font-size: 50px; text-align: center; color:#fff; font-weight: 500; letter-spacing: 15px;  display: block; padding:80px 0;}
+  .special .mac{max-width:789px; min-width: 500px; height:460px; position: absolute; top:230px; left: 17%;}
+  .special .mac img{width:100%;}
+  .special div{float: left;}
+ 
+  .special .note_opa{background-color: #000; opacity: 0.2; height: 680px; width: 545px; }
+  .special .note_bor{border: 2px solid #fff; position: relative; position: absolute; bottom: 0; right:22.5%;}
+  .special .note_bor p{position: absolute; top:60px; left: 50px; color:#fff; font-size: 16px; font-weight: 400; letter-spacing: 2px; line-height: 40px; text-align: right; z-index: 111;}
+  .special .note_side{position: absolute; bottom: -2px; right:-18px;;}
+
+  /********************  footer 영역  *******************/
+  .foot{width:50%; margin:0 auto 60px auto; text-align: center; font-size: 16px; color:#222; font-weight: 400;}
+  .foot img{display: block; margin: 30px auto; cursor: pointer;}
+  .foot .foot_list{display: inline-block;}
+  .foot .foot_list li{float: left;}
+  .foot .foot_list li:nth-child(even){font-size:12px; margin:3px 15px;}
+  .foot .foot_list li:nth-child(odd){letter-spacing: 1px; cursor: pointer;}
