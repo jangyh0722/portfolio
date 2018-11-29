@@ -198,8 +198,8 @@ section{width:100%; height: 969px;}
 .skills_lf .inner .prev{float: left; margin-left: 50px; cursor: pointer;}
 .skills_lf .inner .next{float: right; margin-right: 50px; cursor: pointer;}
 .skills_lf .inner{height:auto; display: table-cell; vertical-align: middle; position: relative;}
-.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:450px; height:68px; overflow: hidden;}
-.skills_lf .inner .skills_li_po .skills_wrap{width:117%; position: absolute; top:0; left: 0; width:750px;}
+.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:450px; height:68px; }
+.skills_lf .inner .skills_li_po .skills_wrap{position: absolute; top:0; left: 0; width:910px;}
 .skills_ban li{width: 60px; height: 68px; float: left; margin-left: 100px;}
 .skills_ban li:first-child{margin-left:50px;}
 .skills_ban li img{width: 100%;}
@@ -260,7 +260,7 @@ section{width:100%; height: 969px;}
 
   /********************  footer 영역  *******************/
   .foot{width:50%; margin:0 auto 60px auto; text-align: center; font-size: 16px; color:#222; font-weight: 400;}
-  .foot img{display: block; margin: 30px auto; cursor: pointer;}
+  .foot .foot_logo {display: block; margin: 30px auto;}
   .foot .foot_list{display: inline-block;}
   .foot .foot_list li{float: left;}
   .foot .foot_list li:nth-child(even){font-size:12px; margin:3px 15px;}

@@ -32,24 +32,55 @@ $(window).scroll(function(){
 	}
 });
 
-/************  메뉴 클릭 시 화면 이동  ************/
+/************  사이드메뉴, 푸터메뉴 클릭 시 화면 이동  ************/
 $("#menu0").click(function(){
 	var position = $("#window0").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+$(".cl_menu0").click(function(){
+	var position = $("#window0").offset();
+	$("body, html").stop().animate({scrollTop:position.top},500);
+});
+
 $("#menu1").click(function(){
 	var position = $("#window1").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+$(".cl_menu1").click(function(){
+	var position = $("#window1").offset();
+	$("body, html").stop().animate({scrollTop:position.top},500);
+});
+
 $("#menu2").click(function(){
 	var position = $("#window2").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+$(".cl_menu2").click(function(){
+	var position = $("#window2").offset();
+	$("body, html").stop().animate({scrollTop:position.top},500);
+});
+
 $("#menu3").click(function(){
 	var position = $("#window3").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+$(".cl_menu3").click(function(){
+	var position = $("#window3").offset();
+	$("body, html").stop().animate({scrollTop:position.top},500);
+});
+
 $("#menu4").click(function(){
 	var position = $("#window4").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+$(".cl_menu4").click(function(){
+	var position = $("#window4").offset();
+	$("body, html").stop().animate({scrollTop:position.top},500);
+});
+
+
+/***********  skills banner ************/
+
+	for(var i = 0; i <= $(".skills_ban li").length-1; i++){
+$(".skills_wrap").delay(2000).stop().animate({"left" : (i*-160) +"px"});
+}
