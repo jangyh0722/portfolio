@@ -81,11 +81,23 @@ $(".cl_menu4").click(function(){
 
 /***********  skills banner ************/
 
-var interval = setInterval(skillRev, 2000);
+var interval = setInterval(skillRev, 3000);
 function skillRev() {
-    $(".skills_wrap").stop().animate({"left":"-160px"}, 500, function(){
+    $(".skills_wrap").stop().animate({"left":"-160px"}, 700, function(){
 				var li = $(this).find("li").eq(0).remove();
 				$(this).find(".skills_ban").append(li);
 				$(this).css({"left":0});
 		});    
 }
+
+$(".prev").click(function(){
+	var li = $(".skills_wrap").find("li").eq(4);
+	$(".skills_wrap").find(".skills_ban").prepend(li);
+	$(".skills_wrap").stop().animate({"left":0}, 700);
+	
+});
+$(".next").click(function(){
+	var li = $(".skills_wrap").find("li").eq(0);
+	$(".skills_wrap").find(".skills_ban").prepend(li);
+	$(".skills_wrap").stop().animate({"left":0});
+});
