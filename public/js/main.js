@@ -81,6 +81,11 @@ $(".cl_menu4").click(function(){
 
 /***********  skills banner ************/
 
-	for(var i = 0; i <= $(".skills_ban li").length-1; i++){
-$(".skills_wrap").delay(2000).stop().animate({"left" : (i*-160) +"px"});
+var interval = setInterval(skillRev, 2000);
+function skillRev() {
+    $(".skills_wrap").stop().animate({"left":"-160px"}, 500, function(){
+				var li = $(this).find("li").eq(0).remove();
+				$(this).find(".skills_ban").append(li);
+				$(this).css({"left":0});
+		});    
 }
