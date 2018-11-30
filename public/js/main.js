@@ -90,14 +90,18 @@ function skillRev() {
 		});    
 }
 
+/***** prev, next 버튼 클릭 시 *****/
 $(".prev").click(function(){
 	var li = $(".skills_wrap").find("li").eq(4);
 	$(".skills_wrap").find(".skills_ban").prepend(li);
-	$(".skills_wrap").stop().animate({"left":0}, 700);
-	
+	$(".skills_wrap").stop().animate({"left":0}, 7000);
+
 });
+
 $(".next").click(function(){
-	var li = $(".skills_wrap").find("li").eq(0);
-	$(".skills_wrap").find(".skills_ban").prepend(li);
-	$(".skills_wrap").stop().animate({"left":0});
+	$(".skills_wrap").stop().animate({"left":"-160px"}, 700, function(){
+		var li = $(this).find("li").eq(0).remove();
+		$(this).find(".skills_ban").append(li);
+		$(this).css({"left":0});
+});    
 });
