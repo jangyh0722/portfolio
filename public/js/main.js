@@ -94,7 +94,7 @@ function skillRev() {
 $(".prev").click(function(){
 	var li = $(".skills_wrap").find("li").eq(4);
 	$(".skills_wrap").find(".skills_ban").prepend(li);
-	$(".skills_wrap").stop().animate({"left":0}, 7000);
+	$(".skills_wrap").stop().animate({"left":0}, 700);
 
 });
 
