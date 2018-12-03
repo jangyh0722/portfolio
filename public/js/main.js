@@ -1,4 +1,4 @@
-/************  메뉴 클릭 시 사이드 메뉴 노출  ************/
+/************ 메뉴 클릭 시 사이드 메뉴 노출 ************/
 $(".ham_menu").click(function(){
     $(".sub_menu").stop().animate({"left":300}, 700);
     $(".main_txt").stop().animate({"margin-left": 300+"px"});
@@ -10,20 +10,7 @@ $(".menu_close").click(function(){
     $(".top_menu").stop().delay(300).animate({"opacity": 0.8});
 });
 
-/************  포트폴리오 영역 마우스 오버 시 동작  ************/
-
-$(".some li").hover(function(){
-	$(this).find(".button").css({"display":"block"});
-	$(this).find(".port_bor").css({"display": "block"});
-	$(this).find("img").css({"opacity": 1, "-webkit-transform":"scale(1.03)", "transform":"scale(1.03)", "-webkit-transition":"all 0.7s ease", "transition":"all 0.5s ease"});
-}, function (){
-	$(this).find(".button").css({"display":"none"});
-	$(this).find(".port_bor").css({"display": "none"});
-	$(this).find("img").css({"opacity": 0.5, "-webkit-transform":"scale(1)", "transform":"scale(1)", "-webkit-transition":"all 0.7s ease", "transition":"all 0.5s ease"});
-});
-
-
-/************  스크롤 시 탑 메뉴 동작  ************/
+/************ 스크롤 시 탑메뉴 노출 ************/
 $(window).scroll(function(){
 	var gap = $("html, body").scrollTop();
 	if(gap > 80) {
@@ -38,7 +25,75 @@ $(window).scroll(function(){
 	}
 });
 
-/************  사이드메뉴, 푸터메뉴 클릭 시 화면 이동  ************/
+/************ About Me의 Keyword 영역 ************/
+
+$(".keword_box li").mousemove(function(evt){
+	var delta = 50;
+	var cX = evt.clientX;
+	var cY = evt.clientY;
+	var iX = $(this).width()/2;
+	var iY = $(this).height()/2;
+	var mX = (iX - cX)/delta;
+	var mY = (iY - cY)/delta;
+	$(this).css("transform", "translate("+mX+"px, "+mY+"px)");
+	
+});
+
+/************ Portfolio 영역 마우스 오버 시 동작 ************/
+$(".some li").hover(function(){
+	$(this).find(".button").css({"display":"block"});
+	$(this).find(".port_bor").css({"display": "block"});
+	$(this).find("img").css({"opacity": 1, "-webkit-transform":"scale(1.03)", "transform":"scale(1.03)", "-webkit-transition":"all 0.7s ease", "transition":"all 0.5s ease"});
+}, function (){
+	$(this).find(".button").css({"display":"none"});
+	$(this).find(".port_bor").css({"display": "none"});
+	$(this).find("img").css({"opacity": 0.5, "-webkit-transform":"scale(1)", "transform":"scale(1)", "-webkit-transition":"all 0.7s ease", "transition":"all 0.5s ease"});
+});
+
+/*********** skills rolling banner ************/
+var interval = setInterval(skillRev, 3000);
+function skillRev() {
+    $(".skills_wrap").stop().animate({"left":"-320px"}, 700, function(){
+				var li = $(this).find("li").eq(0).remove();
+				$(this).find(".skills_ban").append(li);
+				$(this).css({"left":"-160px"});
+		});    
+}
+/***** skills banner의 prev, next 버튼 클릭 시 *****/
+$(".prev").click(function(){
+
+	$(".skills_wrap").stop().animate({"left":0}, 700, function(){
+		var li = $(this).find("li").eq(4).remove();
+		$(this).find(".skills_ban").prepend(li);
+		$(this).css({"left":"-160px"});
+});
+});
+$(".next").click(function(){
+	$(".skills_wrap").stop().animate({"left":"-320px"}, 700, function(){
+		var li = $(this).find("li").eq(0).remove();
+		$(this).find(".skills_ban").append(li);
+		$(this).css({"left":"-160px"});
+});    
+});
+/************* skills의 progress bar 효과 **************/
+$(".prog_inner1").stop().animate({"width":"90%"}, 2500);
+$(".prog_inner2").stop().animate({"width":"90%"}, 2500);
+$(".prog_inner3").stop().animate({"width":"40%"}, 2500);
+$(".prog_inner4").stop().animate({"width":"30%"}, 2500);
+$(".prog_inner5").stop().animate({"width":"65%"}, 2500);
+$(".prog_inner6").stop().animate({"width":"65%"}, 2500);
+$(".skills_prog li:nth-child(2) .in li:last-child, .skills_prog li:nth-child(1) .in li:last-child").stop().animate({"left":"-9%", "opacity":1}, 2500);
+$(".skills_prog li:nth-child(3) .in li:last-child").stop().animate({"left":"-53.5%", "opacity":1}, 2500);
+$(".skills_prog li:nth-child(4) .in li:last-child").stop().animate({"left":"-62.5%", "opacity":1}, 2500);
+$(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) .in li:last-child").stop().animate({"left":"-31.2%", "opacity":1}, 2500);
+
+
+/********** Special Note 효과 **********/
+$(".note_bor").stop().animate({"bottom": 0}, 2500);
+$(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
+
+
+/************ 사이드메뉴, 푸터메뉴 클릭 시 화면 이동 ************/
 $("#menu0").click(function(){
 	var position = $("#window0").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
@@ -47,6 +102,7 @@ $(".cl_menu0").click(function(){
 	var position = $("#window0").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+
 $("#menu1").click(function(){
 	var position = $("#window1").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
@@ -55,6 +111,7 @@ $(".cl_menu1").click(function(){
 	var position = $("#window1").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+
 $("#menu2").click(function(){
 	var position = $("#window2").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
@@ -80,39 +137,4 @@ $("#menu4").click(function(){
 $(".cl_menu4").click(function(){
 	var position = $("#window4").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
-});
-
-
-/***********  skills banner ************/
-
-var interval = setInterval(skillRev, 3000);
-function skillRev() {
-    $(".skills_wrap").stop().animate({"left":"-160px"}, 700, function(){
-				var li = $(this).find("li").eq(0).remove();
-
-				$(this).find(".skills_ban").append(li);
-				$(this).css({"left":0});
-		});    
-}
-/***** prev, next 버튼 클릭 시 *****/
-$(".prev").click(function(){
-	
-/*
-	var li = $(".skills_wrap").find("li").eq(4).remove();
-	$(".skills_wrap").find(".skills_ban").prepend(li);
-	$(".skills_wrap").stop().animate({"left":"160px"}, 700);
-*/
-	$(".skills_wrap").stop().animate({"left":"160px"}, 700, function(){
-		var li = $(this).find("li").eq(4).remove();
-		$(this).find(".skills_ban").prepend(li);
-		$(this).css({"left":0});
-});
-});
-
-$(".next").click(function(){
-	$(".skills_wrap").stop().animate({"left":"-160px"}, 700, function(){
-		var li = $(this).find("li").eq(0).remove();
-		$(this).find(".skills_ban").append(li);
-		$(this).css({"left":0});
-});    
 });

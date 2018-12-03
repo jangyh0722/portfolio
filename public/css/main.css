@@ -118,12 +118,12 @@ section{width:100%; height: 969px;}
     width:260px;
     height: 350px;
 }
-.about .keyword .keword_box li{padding:10px 7px; border-radius: 7px; float: left; display: table-cell; vertical-align: middle;}
+.about .keyword .keword_box li{padding:10px 7px; border-radius: 7px; float: left; display: table-cell; vertical-align: middle; cursor: default;}
 .about .keyword .keword_box .box1{width:110px; background-color: #488aff;position: absolute;  top:5%; left: 8%;
     transform: translate(-8%, -5%); 
     -webkit-transform: translate(-8%, -5%); 
     -moz-transform: translate(-8%, -5%); 
-    -o-transform: translate(-8%, -5%); }
+    -o-transform: translate(-8%, -5%);}
 .about .keyword .keword_box .box2{width:110px; background-color: #32db64; position: absolute;  top:5%; left: 93%;
     transform: translate(-93%, -5%); 
     -webkit-transform: translate(-93%, -5%); 
@@ -203,8 +203,8 @@ section{width:100%; height: 969px;}
 .skills_lf .inner .prev{float: left; margin-left: 50px; cursor: pointer;}
 .skills_lf .inner .next{float: right; margin-right: 50px; cursor: pointer;}
 .skills_lf .inner{height:auto; display: table-cell; vertical-align: middle; position: relative;}
-.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:450px; height:68px; }
-.skills_lf .inner .skills_li_po .skills_wrap{position: absolute; top:0; left: 0; width:910px;}
+.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:450px; height:68px; overflow: hidden;}
+.skills_lf .inner .skills_li_po .skills_wrap{position: absolute; top:0; left: -160px; width:910px;}
 .skills_ban li{width: 60px; height: 68px; float: left; margin-left: 100px;}
 .skills_ban li:first-child{margin-left:50px;}
 .skills_ban li img{width: 100%;}
@@ -224,23 +224,23 @@ section{width:100%; height: 969px;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li:last-child{margin:31px 0 0 10px;position: relative;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li:last-child span{position: absolute;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(1) .in li:last-child,
-.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(2) .in li:last-child{left: -9%;}
-.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(3) .in li:last-child{left: -53.5%;}
-.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(4) .in li:last-child{left: -62.5%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(2) .in li:last-child{left: -90%; opacity: 0;}
+.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(3) .in li:last-child{left: -90%; opacity: 0;}
+.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(4) .in li:last-child{left: -90%; opacity: 0;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(5) .in li:last-child,
-.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(6) .in li:last-child{left: -31.2%;}
+.skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(6) .in li:last-child{left: -90%; opacity: 0;}
 
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li .prog{width:auto;}
 
 .prog_inner1, .prog_inner4 {background: linear-gradient( to right, #00ffcc, #03c5fd ); color:#00ffcc; display: inline-block;}
 .prog_inner2, .prog_inner5 {background: linear-gradient( to right, #009cff, #ae00ff ); color:#009cff;}
 .prog_inner3, .prog_inner6 {background: linear-gradient( to right, #942bff, #ff6868 ); color:#942bff;}
-.prog_inner1{width:90%;}
-.prog_inner2{width:90%;}
-.prog_inner3{width:40%;}
-.prog_inner4{width:30%;}
-.prog_inner5{width:65%;}
-.prog_inner6{width:65%;}
+.prog_inner1{width:0;}
+.prog_inner2{width:0;}
+.prog_inner3{width:0;}
+.prog_inner4{width:0;}
+.prog_inner5{width:0;}
+.prog_inner6{width:0;}
 
 /********************  special note 영역  *******************/
 .special{
@@ -252,19 +252,19 @@ section{width:100%; height: 969px;}
     background-attachment: fixed;
     
   }
-  .special{position: relative; margin-bottom: 60px;}
+  .special{position: relative; margin-bottom: 60px; overflow: hidden;}
   .special span{font-size: 50px; text-align: center; color:#fff; font-weight: 500; letter-spacing: 15px;  display: block; padding:80px 0;}
-  .special .mac{max-width:789px; min-width: 500px; height:460px; position: absolute; top:230px; left: 17%;}
+  .special .mac{max-width:789px; min-width: 500px; height:460px; position: absolute; top:230px; left: 0; opacity: 0;}
   .special .mac img{width:100%;}
   .special div{float: left;}
  
   .special .note_opa{background-color: #000; opacity: 0.2; height: 680px; width: 545px; }
-  .special .note_bor{border: 2px solid #fff; position: relative; position: absolute; bottom: 0; right:22.5%;}
+  .special .note_bor{border: 2px solid #fff; position: relative; position: absolute; bottom: -681px; right:22.5%;}
   .special .note_bor p{position: absolute; top:60px; left: 50px; color:#fff; font-size: 16px; font-weight: 400; letter-spacing: 2px; line-height: 40px; text-align: right; z-index: 111;}
   .special .note_side{position: absolute; bottom: -2px; right:-18px;;}
 
   /********************  footer 영역  *******************/
-  .foot{width:50%; margin:0 auto 60px auto; text-align: center; font-size: 16px; color:#222; font-weight: 400;}
+  .foot{width:50%; margin:0 auto 60px auto; text-align: center; font-size: 16px; color:#222; font-weight: 400; overflow: hidden;}
   .foot .foot_logo {display: block; margin: 30px auto;}
   .foot .foot_list{display: inline-block;}
   .foot .foot_list li{float: left;}

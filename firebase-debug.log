@@ -1,25 +1,25 @@
-[debug] [2018-11-30T05:49:16.725Z] ----------------------------------------------------------------------
-[debug] [2018-11-30T05:49:16.728Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-11-30T05:49:16.728Z] CLI Version:   5.1.1
-[debug] [2018-11-30T05:49:16.728Z] Platform:      win32
-[debug] [2018-11-30T05:49:16.728Z] Node Version:  v8.12.0
-[debug] [2018-11-30T05:49:16.728Z] Time:          Fri Nov 30 2018 14:49:16 GMT+0900 (대한민국 표준시)
-[debug] [2018-11-30T05:49:16.728Z] ----------------------------------------------------------------------
+[debug] [2018-12-03T01:32:39.956Z] ----------------------------------------------------------------------
+[debug] [2018-12-03T01:32:39.956Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-03T01:32:39.956Z] CLI Version:   5.1.1
+[debug] [2018-12-03T01:32:39.956Z] Platform:      win32
+[debug] [2018-12-03T01:32:39.956Z] Node Version:  v8.12.0
+[debug] [2018-12-03T01:32:39.956Z] Time:          Mon Dec 03 2018 10:32:39 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-03T01:32:39.956Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-11-30T05:49:16.758Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-11-30T05:49:16.768Z] > authorizing via signed-in user
-[debug] [2018-11-30T05:49:16.769Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get"]
-[debug] [2018-11-30T05:49:16.774Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
+[debug] [2018-12-03T01:32:39.972Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-03T01:32:39.972Z] > authorizing via signed-in user
+[debug] [2018-12-03T01:32:39.972Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-12-03T01:32:39.972Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
 
-[debug] [2018-11-30T05:49:18.135Z] <<< HTTP RESPONSE 200
-[debug] [2018-11-30T05:49:18.141Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio  
+[debug] [2018-12-03T01:32:41.245Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T01:32:41.247Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio  
  
-[debug] [2018-11-30T05:49:19.359Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T01:32:42.394Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'D:\portfolio'...
 [info] 
-[debug] [2018-11-30T05:49:19.366Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/207039781665/clients/_:getWebAppConfig  
+[debug] [2018-12-03T01:32:42.394Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/207039781665/clients/_:getWebAppConfig  
  
-[debug] [2018-11-30T05:49:20.401Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-03T01:32:43.157Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
