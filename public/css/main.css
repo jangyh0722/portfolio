@@ -197,7 +197,7 @@ section{width:100%; height: 969px;}
 }
 
 /********************  skills 영역  *******************/
-.skills{width:100%; height: 600px; }
+.skills{width:100%; height: 600px;}
 .skills_lf{width:43.75%; height:inherit; float: left; text-align: center; display: table;}
 .skills_lf .inner > span{font-size: 46px; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; display: block; margin-bottom: 60px;}
 .skills_lf .inner .prev{float: left; margin-left: 50px; cursor: pointer;}

@@ -76,6 +76,9 @@ $(".next").click(function(){
 });    
 });
 /************* skills의 progress bar 효과 **************/
+$(window).scroll(function(){
+	var gap2 = $("html, body").scrollTop();
+	if(gap2 > 1400) {
 $(".prog_inner1").stop().animate({"width":"90%"}, 2500);
 $(".prog_inner2").stop().animate({"width":"90%"}, 2500);
 $(".prog_inner3").stop().animate({"width":"40%"}, 2500);
@@ -86,11 +89,17 @@ $(".skills_prog li:nth-child(2) .in li:last-child, .skills_prog li:nth-child(1) 
 $(".skills_prog li:nth-child(3) .in li:last-child").stop().animate({"left":"-53.5%", "opacity":1}, 2500);
 $(".skills_prog li:nth-child(4) .in li:last-child").stop().animate({"left":"-62.5%", "opacity":1}, 2500);
 $(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) .in li:last-child").stop().animate({"left":"-31.2%", "opacity":1}, 2500);
-
+	}
+});
 
 /********** Special Note 효과 **********/
+$(window).scroll(function(){
+	var gap3 = $("html, body").scrollTop();
+	if(gap3 > 2200) {
 $(".note_bor").stop().animate({"bottom": 0}, 2500);
 $(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
+	}
+});
 
 
 /************ 사이드메뉴, 푸터메뉴 클릭 시 화면 이동 ************/
