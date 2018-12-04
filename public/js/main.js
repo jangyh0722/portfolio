@@ -1,4 +1,37 @@
+/*************** 모달창 ***************/
+var modal = document.getElementById('myModal');
+ 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];                                          
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+	modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+	modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+
 /************ 메뉴 클릭 시 사이드 메뉴 노출 ************/
+//햄버거 메뉴 오버시 효과
+$(".bars").hover(function(){
+	$(".ham").css({"background-color":"#f3b47f"});
+	$(".ham").css({"-webkit-transition": "background-color .5s, -webkit-transform .5s", "transition":"background-color .5s, transform .5s"});
+}, function(){
+	$(".ham").css({"background-color":"#fff"});
+});
+
 $(".ham_menu").click(function(){
     $(".sub_menu").stop().animate({"left":300}, 700);
     $(".main_txt").stop().animate({"margin-left": 300+"px"});
@@ -26,7 +59,6 @@ $(window).scroll(function(){
 });
 
 /************ About Me의 Keyword 영역 ************/
-
 $(".keword_box li").mousemove(function(evt){
 	var delta = 50;
 	var cX = evt.clientX;
@@ -96,13 +128,18 @@ $(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) 
 $(window).scroll(function(){
 	var gap3 = $("html, body").scrollTop();
 	if(gap3 > 2200) {
-$(".note_bor").stop().animate({"bottom": 0}, 2500);
+$(".note_bor").stop().animate({"bottom": 0}, 2000);
 $(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
 	}
 });
 
-
 /************ 사이드메뉴, 푸터메뉴 클릭 시 화면 이동 ************/
+$(".menu_close").hover(function(){
+	$(this).find("img").attr("src", "img/sub_menu_icon/sub_menu_close_hover.png");
+}, function(){
+	$(this).find("img").attr("src", "img/sub_menu_icon/sub_close.png");
+});
+
 $("#menu0").click(function(){
 	var position = $("#window0").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
