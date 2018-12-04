@@ -10,15 +10,22 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
 	modal.style.display = "block";
+	$('html, body').on('scroll touchmove mousewheel', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	  });
 }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 	modal.style.display = "none";
+	$('html, body').off('scroll touchmove mousewheel');
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 	if (event.target == modal) {
 		modal.style.display = "none";
+		$('html, body').off('scroll touchmove mousewheel');
 	}
 }
 
