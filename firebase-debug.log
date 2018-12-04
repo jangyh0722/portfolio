@@ -1,0 +1,45 @@
+[debug] [2018-12-04T08:12:32.885Z] ----------------------------------------------------------------------
+[debug] [2018-12-04T08:12:32.900Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-12-04T08:12:32.900Z] CLI Version:   5.1.1
+[debug] [2018-12-04T08:12:32.901Z] Platform:      win32
+[debug] [2018-12-04T08:12:32.901Z] Node Version:  v8.12.0
+[debug] [2018-12-04T08:12:32.904Z] Time:          Tue Dec 04 2018 17:12:32 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-04T08:12:32.904Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-04T08:12:32.942Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-04T08:12:32.943Z] > authorizing via signed-in user
+[debug] [2018-12-04T08:12:32.943Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2018-12-04T08:12:32.949Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-04T08:12:32.950Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-12-04T08:12:33.410Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-04T08:12:33.420Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
+
+[debug] [2018-12-04T08:12:34.631Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-04T08:12:34.631Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/jangyh0722-portfolio  
+ 
+[debug] [2018-12-04T08:12:35.458Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'jangyh0722-portfolio'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-12-04T08:12:35.490Z] >>> HTTP REQUEST PUT https://jangyh0722-portfolio.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2018-12-04T08:12:36.645Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database jangyh0722-portfolio is valid
+[debug] [2018-12-04T08:12:36.661Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jangyh0722-portfolio/versions  
+
+[debug] [2018-12-04T08:12:38.642Z] <<< HTTP RESPONSE 200
+[info] i  hosting[jangyh0722-portfolio]: beginning deploy...
+[info] i  hosting[jangyh0722-portfolio]: found 60 files in public
+[debug] [2018-12-04T08:12:38.863Z] [hosting] hash cache [cHVibGlj] stored for 60 files
+[debug] [2018-12-04T08:12:38.863Z] [hosting][hash queue][FINAL]
+[debug] [2018-12-04T08:12:38.863Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jangyh0722-portfolio/versions/101d6b81b24a4170:populateFiles  
+ <request body omitted>
