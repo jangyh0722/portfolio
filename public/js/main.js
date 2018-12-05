@@ -67,14 +67,14 @@ $(window).scroll(function(){
 
 /************ About Me의 Keyword 영역 ************/
 $(".keword_box li").mousemove(function(evt){
-	var delta = 50;
+	var delta = 25;
 	var cX = evt.clientX;
 	var cY = evt.clientY;
 	var iX = $(this).width()/2;
 	var iY = $(this).height()/2;
 	var mX = (iX - cX)/delta;
 	var mY = (iY - cY)/delta;
-	$(this).css("transform", "translate("+mX+"px, "+mY+"px)");
+	$(this).css({"left":mX+"px", "top": mY+"px"});
 	
 });
 
