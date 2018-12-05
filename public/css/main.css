@@ -282,8 +282,8 @@ section{width:100%; height: 969px;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li .prog{width:auto;}
 
 .prog_inner1, .prog_inner4 {background: linear-gradient( to right, #00ffcc, #03c5fd ); color:#00ffcc; display: inline-block;}
-.prog_inner2, .prog_inner5 {background: linear-gradient( to right, #009cff, #ae00ff ); color:#009cff;}
-.prog_inner3, .prog_inner6 {background: linear-gradient( to right, #942bff, #ff6868 ); color:#942bff;}
+.prog_inner2, .prog_inner5 {background: linear-gradient( to right, #03c5fd, #ae00ff ); color:#03c5fd;}
+.prog_inner3, .prog_inner6 {background: linear-gradient( to right, #ae00ff, #ff6868 ); color:#ae00ff;}
 .prog_inner1{width:0;}
 .prog_inner2{width:0;}
 .prog_inner3{width:0;}

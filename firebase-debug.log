@@ -1,45 +1,58 @@
-[debug] [2018-12-04T08:12:32.885Z] ----------------------------------------------------------------------
-[debug] [2018-12-04T08:12:32.900Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
-[debug] [2018-12-04T08:12:32.900Z] CLI Version:   5.1.1
-[debug] [2018-12-04T08:12:32.901Z] Platform:      win32
-[debug] [2018-12-04T08:12:32.901Z] Node Version:  v8.12.0
-[debug] [2018-12-04T08:12:32.904Z] Time:          Tue Dec 04 2018 17:12:32 GMT+0900 (대한민국 표준시)
-[debug] [2018-12-04T08:12:32.904Z] ----------------------------------------------------------------------
+[debug] [2018-12-05T01:06:05.248Z] ----------------------------------------------------------------------
+[debug] [2018-12-05T01:06:05.256Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-05T01:06:05.258Z] CLI Version:   5.1.1
+[debug] [2018-12-05T01:06:05.258Z] Platform:      win32
+[debug] [2018-12-05T01:06:05.258Z] Node Version:  v8.12.0
+[debug] [2018-12-05T01:06:05.261Z] Time:          Wed Dec 05 2018 10:06:05 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-05T01:06:05.261Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-12-04T08:12:32.942Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-12-04T08:12:32.943Z] > authorizing via signed-in user
-[debug] [2018-12-04T08:12:32.943Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
-[debug] [2018-12-04T08:12:32.949Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-12-04T08:12:32.950Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2018-12-05T01:06:05.301Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-05T01:06:05.303Z] > authorizing via signed-in user
+[debug] [2018-12-05T01:06:05.303Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-12-05T01:06:05.308Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-05T01:06:05.311Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2018-12-04T08:12:33.410Z] <<< HTTP RESPONSE 200
-[debug] [2018-12-04T08:12:33.420Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
+[debug] [2018-12-05T01:06:05.855Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T01:06:05.865Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
 
-[debug] [2018-12-04T08:12:34.631Z] <<< HTTP RESPONSE 200
-[debug] [2018-12-04T08:12:34.631Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/jangyh0722-portfolio  
+[debug] [2018-12-05T01:06:07.092Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T01:06:07.092Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio  
  
-[debug] [2018-12-04T08:12:35.458Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T01:06:08.328Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Deploying to 'jangyh0722-portfolio'...
+[info] === Serving from 'D:\portfolio'...
 [info] 
-[info] i  deploying database, hosting
-[info] i  database: checking rules syntax...
-[debug] [2018-12-04T08:12:35.490Z] >>> HTTP REQUEST PUT https://jangyh0722-portfolio.firebaseio.com/.settings/rules.json?dryRun=true  
- {
-  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
-  "rules": {
-    ".read": false,
-    ".write": false
-  }
-}
-[debug] [2018-12-04T08:12:36.645Z] <<< HTTP RESPONSE 200
-[info] +  database: rules syntax for database jangyh0722-portfolio is valid
-[debug] [2018-12-04T08:12:36.661Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jangyh0722-portfolio/versions  
-
-[debug] [2018-12-04T08:12:38.642Z] <<< HTTP RESPONSE 200
-[info] i  hosting[jangyh0722-portfolio]: beginning deploy...
-[info] i  hosting[jangyh0722-portfolio]: found 60 files in public
-[debug] [2018-12-04T08:12:38.863Z] [hosting] hash cache [cHVibGlj] stored for 60 files
-[debug] [2018-12-04T08:12:38.863Z] [hosting][hash queue][FINAL]
-[debug] [2018-12-04T08:12:38.863Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jangyh0722-portfolio/versions/101d6b81b24a4170:populateFiles  
+[debug] [2018-12-05T01:06:08.359Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/207039781665/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-05T01:06:09.547Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2018-12-05T04:36:06.988Z] ----------------------------------------------------------------------
+[debug] [2018-12-05T04:36:06.988Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-12-05T04:36:06.988Z] CLI Version:   5.1.1
+[debug] [2018-12-05T04:36:06.988Z] Platform:      win32
+[debug] [2018-12-05T04:36:06.988Z] Node Version:  v8.12.0
+[debug] [2018-12-05T04:36:06.988Z] Time:          Wed Dec 05 2018 13:36:06 GMT+0900 (대한민국 표준시)
+[debug] [2018-12-05T04:36:06.988Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-05T04:36:07.004Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-05T04:36:07.004Z] > authorizing via signed-in user
+[debug] [2018-12-05T04:36:07.004Z] [iam] checking project jangyh0722-portfolio for permissions ["firebase.projects.get"]
+[debug] [2018-12-05T04:36:07.004Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-12-05T04:36:07.004Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
+[debug] [2018-12-05T04:36:07.331Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T04:36:07.331Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio:testIamPermissions  
+
+[debug] [2018-12-05T04:36:08.534Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-05T04:36:08.550Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/jangyh0722-portfolio  
+ 
+[debug] [2018-12-05T04:36:09.721Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'D:\portfolio'...
+[info] 
+[debug] [2018-12-05T04:36:09.730Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/207039781665/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-05T04:36:10.774Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
