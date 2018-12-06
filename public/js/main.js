@@ -147,7 +147,7 @@ $(window).scroll(function(){
 var noteChk = true;
 $(window).scroll(function(){
 	var gap3 = $("html, body").scrollTop();
-	if(gap3 > 2500 && noteChk) {
+	if(gap3 > 2800 && noteChk) {
 $(".note_bor").stop().animate({"bottom": 0}, 2000);
 $(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
 noteChk = false;
