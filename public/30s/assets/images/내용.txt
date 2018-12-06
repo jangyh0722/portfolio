@@ -1,0 +1,138 @@
+주폰트 
+Arial(기본)
+
+1920px~960px (15px)
+959px~480px (14px)
+479px~ (12px)
+
+
+메인타이틀 (40~50px)
+.navbar-brand>img{max-width:70%; margin-top:-9px;}
+.icon-txt{display:none;}
+.navbar-inverse .navbar-nav>li>a{font-size:1rem;}
+
+
+타이틀 (24px)
+내용 (15px)
+
+
+
+Baskerville BT(효과)
+Century Gothic(효과
+
+
+
+
+Home
+ABOUT US
+NEW ARIVALS
+Pages
+Blog
+Contact Us
+-----------------------------------
+나무등
+new arrivals
+new style
+for lamp
+Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+shop now
+
+의자
+
+featured design ideal
+Wooden
+collection
+Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+shop now
+
+철등
+
+design ideal
+lamps
+lighting
+Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
+shop now
+-------------------------------------------------------------------
+
+about us
+Claritas est etiam processus dynamicus, qui sequitur.
+Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. 
+Mirum est notare quam littera gothica, quam nunc putamus parum claram, 
+anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. 
+Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+
+hurryup
+FREE UK DELIVERY + RETURN OVER ￡75.00 (EXCLUDING HOMEWARE)| FREE UK COLLECT FROM STORE
+
+-------------------------------------------------------------------------------------------
+new arrivals
+Claritas est etiam processus dynamicus, qui sequitur.
+
+new -25%
+
+Sacrificial Chair Design
+$170.00
+
+Sacrificial Chair Design
+$170.00
+
+Sacrificial Chair Design
+$170.00
+
+Sacrificial Chair Design
+$170.00
+
+---------------------------------------------------------------
+
+creative design
+lighting furniture
+Typi non habent claritatem insitam.
+view collection
+--------------------------------------------------------------
+featured products
+Claritas est etiam processus dynamicus, qui sequitur.
+
+Sacrificial Chair Design
+$170.00
+
+------------------------------------------------------------
+sign up to newsletter
+Subscribe to the Eren mailing list to receive updates on new arrivals,
+special offers and other discount information.
+
+---------------------------------------------------------------------
+
+BESTSELLER products
+
+
+onsale products
+
+MOST VIEWED products
+----------------------------------------------------------------
+
+from our blog
+Claritas est etiam processus dynamicus, qui sequitur.
+
+
+
+
+April
+
+
+
+
+Claritas est etiam processus
+dynamicus.
+Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus.
+read more
+----------------------------------------------------------------------------------------------
+Typi non habent claritatem insitam, est usus legentis in iis qui facit eorum claritatem.
+Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+Claritas est etiam processus dynamicus. 
+-------------------------------------------------------------------------------------------------
+Copyright ⓒ 2018 Gridgum / All Right Reserved. 
+
+
+
+
+

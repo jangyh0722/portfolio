@@ -29,7 +29,6 @@ window.onclick = function(event) {
 	}
 }
 
-
 /************ 메뉴 클릭 시 사이드 메뉴 노출 ************/
 //햄버거 메뉴 오버시 효과
 $(".bars").hover(function(){
@@ -67,8 +66,8 @@ $(window).scroll(function(){
 
 /************ About Me의 Keyword 영역 ************/
 $(".keword_box li").mousemove(function(evt){
-	var delta = 25;
-	var cX = evt.offsetX;
+	var delta = 15;
+	var cX = evt.offsetX; // offset : 부모 기준
 	var cY = evt.offsetY;
 	var iX = $(this).width()/2;
 	var iY = $(this).height()/2;
@@ -77,7 +76,6 @@ $(".keword_box li").mousemove(function(evt){
 	$(this).css({"margin-left":mX+"px", "margin-top": mY+"px"});
 	
 });
-
 /************ Portfolio 영역 마우스 오버 시 동작 ************/
 $(".some li").hover(function(){
 	$(this).find(".button").css({"display":"block"});
@@ -130,7 +128,7 @@ $(".next").on("click", nextFn);
 var progChk = true;
 $(window).scroll(function(){
 	var gap2 = $("html, body").scrollTop();
-	if(gap2 > 1400 && progChk) {
+	if(gap2 > 1800 && progChk) {
 		$(".prog_inner1").stop().animate({"width":"90%"}, 2500);
 		$(".prog_inner2").stop().animate({"width":"90%"}, 2500);
 		$(".prog_inner3").stop().animate({"width":"40%"}, 2500);
@@ -146,12 +144,15 @@ $(window).scroll(function(){
 });
 
 /********** Special Note 효과 **********/
+var noteChk = true;
 $(window).scroll(function(){
 	var gap3 = $("html, body").scrollTop();
-	if(gap3 > 2200) {
+	if(gap3 > 2500 && noteChk) {
 $(".note_bor").stop().animate({"bottom": 0}, 2000);
 $(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
+noteChk = false;
 	}
+	
 });
 
 /************ 사이드메뉴, 푸터메뉴 클릭 시 화면 이동 ************/

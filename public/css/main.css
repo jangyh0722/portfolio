@@ -215,13 +215,12 @@ section{width:100%; height: 969px;}
 
 /********************  portfolio 영역  *******************/
 .port{position: relative;}
-.box_wrap{}
 .port .some{width:100%;overflow: hidden; background-color: #000;}
 .port .some li{width:100%; height:300px; position: relative; text-align: center;overflow: hidden;}
 .port .port_txt{font-size: 46px; background-color: #fff; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; height:200px; width:100%;  display: table;}
 .port .port_txt .port_inner{display: table-cell; vertical-align: middle;}
-.port .more {display: table; font-size: 18px; background-color: #fff; text-align: center; color:#222; font-weight: 400; letter-spacing: 5px; height:80px; width:100%; cursor: pointer;}
-.port .more:hover {background-color:#f8dcc4; color:#ff841f; font-weight: 500;}
+.port .more {display: table; font-size: 18px; background-color: rgb(243, 243, 243); text-align: center; color:#222; font-weight: 600; letter-spacing: 5px; height:80px; width:100%; cursor: pointer;}
+.port .more:hover {background-color:#ffebd9; color:#ff790b; font-weight: 600; }
 .port .more .more_inner{display: table-cell; vertical-align: middle;}
 .port .some li > div > img{ width:120%; opacity: 0.5;}
 .port .some li > div .button{position: absolute; top:75%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
@@ -239,7 +238,6 @@ section{width:100%; height: 969px;}
     -o-transform: translate(-50%, -50%);
     display: none;
 }
-
 /********************  skills 영역  *******************/
 .skills{width:100%; height: 600px;}
 .skills_lf{width:43.75%; height:inherit; float: left; text-align: center; display: table;}
@@ -247,7 +245,7 @@ section{width:100%; height: 969px;}
 .skills_lf .inner .prev{float: left; margin-left: 50px; cursor: pointer;}
 .skills_lf .inner .next{float: right; margin-right: 50px; cursor: pointer;}
 .skills_lf .inner{height:auto; display: table-cell; vertical-align: middle; position: relative;}
-.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:450px; height:68px; overflow: hidden;}
+.skills_lf .inner .skills_li_po{position: relative; position: absolute; top:55%; left: 22%; width:53%; height:68px; overflow: hidden;}
 .skills_lf .inner .skills_li_po .skills_wrap{position: absolute; top:0; left: -160px; width:910px;}
 .skills_ban li{width: 60px; height: 68px; float: left; margin-left: 100px;}
 .skills_ban li:first-child{margin-left:50px;}
