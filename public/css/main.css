@@ -13,7 +13,7 @@ video {
 /***********모달창************/
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
+    /*display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 11111; /* Sit on top */
     left: 0;
@@ -29,36 +29,29 @@ video {
 .modal-content {
     background-color: #f3b47f;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
     width: 478px; /* Could be more or less, depending on screen size */        
     height: 594px;
-    position: relative;                  
+    position: relative;
+    border-radius: 0;         
 }
 /* The Close Button */
-.close {
-    color: #fff;
-    float: right;
-    font-size: 28px;
-    font-weight: 100;
-    position: absolute;
-    bottom: 25px;
-    left: 35px;
-}
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
 
+.modal-content p{font-size: 40px; color:#fff; font-weight: 400; letter-spacing: 16px;  text-align: center; padding:30px 0;}
+.modal-content .cont_form{width: 95%; height:65%; margin: 0 auto;}
+.modal-content .cont_form .input{text-align: center; font-size:16px; width:100%; height: 15%; margin-bottom: 2.5%; background-color: #f3b47f; color:#fff; border: 1px solid #fff;}
+.modal-content .cont_form textarea[name="message"]{text-align: center; font-size:16px; width:100%; height: 45%; background-color: #f3b47f; color:#fff; border: 1px solid #fff; margin-bottom: 6%;}
+.modal-content .cont_form .send{color:#fff; font-size:16px; float:right; font-weight: 400; cursor: pointer; letter-spacing: 3px;}
+.modal-content .cont_form .send:hover{border-bottom: 1px solid #fff;}
+.modal-content .cont_form .close {padding:1% 0; color: #fff; font-size: 16px; float: left; font-weight: 200; cursor: pointer; letter-spacing: 3px; opacity: 1;}
+.modal-content .cont_form .close:hover{border-bottom: 1px solid #fff; opacity: 1;}
 header{color:#fff; height: 1130px;}
 .top_menu, .main_txt{padding:50px; position: relative;}
 .wrap .top_menu .fas{margin-right:30px; font-size: 20px; cursor: pointer;}
 .wrap .top_menu li{float: left; }
 .dn_bg {background-color:#222; width:100%; height: 0; position:fixed; top:0; z-index: 1111; width:100%; }
 .wrap .top_menu .logo{padding-top:3px; cursor: pointer;}
-.wrap .top_menu .logo .logo_txt{font-size: 20px; line-height: 0;-webkit-transition: color .5s, -webkit-transform .5s;
-    transition:color .5s, transform .5s;}
+.wrap .top_menu .logo .logo_txt{font-size: 20px; line-height: 0;-webkit-transition: color .3s, -webkit-transform .3s;
+    transition:color .3s, transform .3s;}
 .wrap .top_menu .logo .logo_txt:hover{color:#f3b47f;}
 
 .wrap .top_menu .logo .logo_txt .logo_b{font-weight: 900;}
@@ -74,8 +67,8 @@ header{color:#fff; height: 1130px;}
     font-weight: 500;
     background-color: #fff; 
     color:#000; 
-    -webkit-transition: background-color .5s, -webkit-transform .5s;
-    transition: background-color .5s, transform .5s;
+    -webkit-transition: .3s, -webkit-transform .3s;
+    transition: .3s, transform .3s;
 }
 .wrap .main_txt .cont_btn a:hover{
     background-color: #f3b47f; 
@@ -114,8 +107,6 @@ header{color:#fff; height: 1130px;}
     -o-transform: translate(-16.5%, -6.2%); 
     cursor: pointer;
 }
-
-
 section{width:100%; height: 969px;}
 
 /********************  about me 영역  *******************/
@@ -216,13 +207,13 @@ section{width:100%; height: 969px;}
 /********************  portfolio 영역  *******************/
 .port{position: relative;}
 .port .some{width:100%;overflow: hidden; background-color: #000;}
-.port .some li{width:100%; height:300px; position: relative; text-align: center;overflow: hidden;}
+.port .some li{width:100%; position: relative; text-align: center;overflow: hidden;}
 .port .port_txt{font-size: 46px; background-color: #fff; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; height:200px; width:100%;  display: table;}
 .port .port_txt .port_inner{display: table-cell; vertical-align: middle;}
-.port .more {display: table; font-size: 18px; background-color: rgb(243, 243, 243); text-align: center; color:#222; font-weight: 600; letter-spacing: 5px; height:80px; width:100%; cursor: pointer;}
+.port .more {display: table; font-size: 18px; background-color: rgb(243, 243, 243); text-align: center; color:#222; font-weight: 600; letter-spacing: 5px; height:75px; width:100%; cursor: pointer;}
 .port .more:hover {background-color:#ffebd9; color:#ff790b; font-weight: 600; }
 .port .more .more_inner{display: table-cell; vertical-align: middle;}
-.port .some li > div > img{ width:120%; opacity: 0.5;}
+.port .some li > div > img{ width:100%; opacity: 0.5;}
 .port .some li > div .button{position: absolute; top:75%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
     transform: translate(-50%, -83%);
     -webkit-transform: translate(-50%, -83%);
@@ -230,6 +221,9 @@ section{width:100%; height: 969px;}
     -o-transform: translate(-50%, -83%); 
     display: none;
     z-index: 1111;
+}
+.port .some li > div .button:hover{background-color: #f3b47f; color:#fff; -webkit-transition: .3s, -webkit-transform .3s;
+    transition: .3s, transform .3s;
 }
 .port .some .port_bor{ z-index: 111; position: absolute; border:1px solid #fff;   width: 97%; height: 77%; top:50%; left: 50%;
     transform: translate(-50%, -50%);
