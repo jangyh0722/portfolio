@@ -68,13 +68,13 @@ $(window).scroll(function(){
 /************ About Me의 Keyword 영역 ************/
 $(".keword_box li").mousemove(function(evt){
 	var delta = 25;
-	var cX = evt.clientX;
-	var cY = evt.clientY;
+	var cX = evt.offsetX;
+	var cY = evt.offsetY;
 	var iX = $(this).width()/2;
 	var iY = $(this).height()/2;
 	var mX = (iX - cX)/delta;
 	var mY = (iY - cY)/delta;
-	$(this).css({"left":mX+"px", "top": mY+"px"});
+	$(this).css({"margin-left":mX+"px", "margin-top": mY+"px"});
 	
 });
 
@@ -99,35 +99,49 @@ function skillRev() {
 		});    
 }
 /***** skills banner의 prev, next 버튼 클릭 시 *****/
-$(".prev").click(function(){
-
+function prevFn() {
+	clearInterval(interval);
+	$(".prev").off("click");
 	$(".skills_wrap").stop().animate({"left":0}, 700, function(){
 		var li = $(this).find("li").eq(4).remove();
 		$(this).find(".skills_ban").prepend(li);
 		$(this).css({"left":"-160px"});
-});
-});
-$(".next").click(function(){
+		clearInterval(interval);
+		interval = setInterval(skillRev, 3000);
+		$(".prev").on("click", prevFn);
+	});
+}
+
+function nextFn() {
+	clearInterval(interval);
+	$(".next").off("click");
 	$(".skills_wrap").stop().animate({"left":"-320px"}, 700, function(){
 		var li = $(this).find("li").eq(0).remove();
 		$(this).find(".skills_ban").append(li);
 		$(this).css({"left":"-160px"});
-});    
-});
+		clearInterval(interval);
+		interval = setInterval(skillRev, 3000);
+		$(".next").on("click", nextFn);
+	});  
+}
+$(".prev").on("click", prevFn);
+$(".next").on("click", nextFn);
 /************* skills의 progress bar 효과 **************/
+var progChk = true;
 $(window).scroll(function(){
 	var gap2 = $("html, body").scrollTop();
-	if(gap2 > 1400) {
-$(".prog_inner1").stop().animate({"width":"90%"}, 2500);
-$(".prog_inner2").stop().animate({"width":"90%"}, 2500);
-$(".prog_inner3").stop().animate({"width":"40%"}, 2500);
-$(".prog_inner4").stop().animate({"width":"30%"}, 2500);
-$(".prog_inner5").stop().animate({"width":"65%"}, 2500);
-$(".prog_inner6").stop().animate({"width":"65%"}, 2500);
-$(".skills_prog li:nth-child(2) .in li:last-child, .skills_prog li:nth-child(1) .in li:last-child").stop().animate({"left":"-9%", "opacity":1}, 2500);
-$(".skills_prog li:nth-child(3) .in li:last-child").stop().animate({"left":"-53.5%", "opacity":1}, 2500);
-$(".skills_prog li:nth-child(4) .in li:last-child").stop().animate({"left":"-62.5%", "opacity":1}, 2500);
-$(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) .in li:last-child").stop().animate({"left":"-31.2%", "opacity":1}, 2500);
+	if(gap2 > 1400 && progChk) {
+		$(".prog_inner1").stop().animate({"width":"90%"}, 2500);
+		$(".prog_inner2").stop().animate({"width":"90%"}, 2500);
+		$(".prog_inner3").stop().animate({"width":"40%"}, 2500);
+		$(".prog_inner4").stop().animate({"width":"30%"}, 2500);
+		$(".prog_inner5").stop().animate({"width":"65%"}, 2500);
+		$(".prog_inner6").stop().animate({"width":"65%"}, 2500);
+		$(".skills_prog li:nth-child(2) .in li:last-child, .skills_prog li:nth-child(1) .in li:last-child").stop().animate({"left":"-9%", "opacity":1}, 2500);
+		$(".skills_prog li:nth-child(3) .in li:last-child").stop().animate({"left":"-53.5%", "opacity":1}, 2500);
+		$(".skills_prog li:nth-child(4) .in li:last-child").stop().animate({"left":"-62.5%", "opacity":1}, 2500);
+		$(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) .in li:last-child").stop().animate({"left":"-31.2%", "opacity":1}, 2500);
+		progChk = false;
 	}
 });
 
