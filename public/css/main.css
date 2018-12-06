@@ -217,17 +217,14 @@ section{width:100%; height: 969px;}
 .port{position: relative;}
 .box_wrap{}
 .port .some{width:100%;overflow: hidden; background-color: #000;}
-.port .some li{width:100%; height: 20%; position: relative; text-align: center;overflow: hidden;}
+.port .some li{width:100%; height:300px; position: relative; text-align: center;overflow: hidden;}
 .port .port_txt{font-size: 46px; background-color: #fff; text-align: center; color:#222; font-weight: 400; letter-spacing: 20px; height:200px; width:100%;  display: table;}
 .port .port_txt .port_inner{display: table-cell; vertical-align: middle;}
-.port .more {display: table; font-size: 18px; background-color: #fff; text-align: center; color:#222; font-weight: 400; letter-spacing: 5px; height:80px; width:100%;}
+.port .more {display: table; font-size: 18px; background-color: #fff; text-align: center; color:#222; font-weight: 400; letter-spacing: 5px; height:80px; width:100%; cursor: pointer;}
 .port .more:hover {background-color:#f8dcc4; color:#ff841f; font-weight: 500;}
 .port .more .more_inner{display: table-cell; vertical-align: middle;}
-.port .some li > div > img{ width:100%; opacity: 0.5;}
-
-
-
-.port .some li > div .button{position: absolute; top:83%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
+.port .some li > div > img{ width:120%; opacity: 0.5;}
+.port .some li > div .button{position: absolute; top:75%; left: 50%; background-color: #fff; color:#222; font-weight: bold; font-size: 18px; letter-spacing: 4px; cursor: pointer; padding: 7px 15px 7px 20px; 
     transform: translate(-50%, -83%);
     -webkit-transform: translate(-50%, -83%);
     -moz-transform: translate(-50%, -83%);
@@ -235,8 +232,7 @@ section{width:100%; height: 969px;}
     display: none;
     z-index: 1111;
 }
-
-.port .some .port_bor{ z-index: 111; position: absolute; border:1px solid #fff;   width: 96.6%; height: 71%; top:50%; left: 50%;
+.port .some .port_bor{ z-index: 111; position: absolute; border:1px solid #fff;   width: 97%; height: 77%; top:50%; left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
