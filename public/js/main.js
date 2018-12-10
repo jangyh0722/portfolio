@@ -77,6 +77,7 @@ $(".keword_box li").mousemove(function(evt){
 	
 });
 /************ Portfolio 영역 마우스 오버 시 동작 ************/
+
 $(".some li").hover(function(){
 	$(this).find(".button").css({"display":"block"});
 	$(this).find(".port_bor").css({"display": "block"});
@@ -86,6 +87,7 @@ $(".some li").hover(function(){
 	$(this).find(".port_bor").css({"display": "none"});
 	$(this).find("img").css({"opacity": 0.5, "-webkit-transform":"scale(1)", "transform":"scale(1)", "-webkit-transition":"all 0.7s ease", "transition":"all 0.5s ease"});
 });
+
 
 /*********** skills rolling banner ************/
 var interval = setInterval(skillRev, 3000);
@@ -146,13 +148,25 @@ $(window).scroll(function(){
 /********** Special Note 효과 **********/
 var noteChk = true;
 $(window).scroll(function(){
-	var gap3 = $("html, body").scrollTop();
-	if(gap3 > 2800 && noteChk) {
-$(".note_bor").stop().animate({"bottom": 0}, 2000);
-$(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
-noteChk = false;
+
+	if(768 < $(window).width() <= 992)
+	{
+		var gap3 = $("html, body").scrollTop();
+		if(gap3 > 5000 && noteChk) {
+		$(".note_bor").stop().animate({"bottom": 0}, 2000);
+		$(".mac").stop().animate({"left":"21%", "opacity":1}, 1500);
+		noteChk = false;
+		}
 	}
-	
+	else($(window).width() > 992)
+	{
+		var gap3 = $("html, body").scrollTop();
+		if(gap3 > 2800 && noteChk) {
+			$(".note_bor").stop().animate({"bottom": 0}, 2000);
+			$(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
+			noteChk = false;
+	}
+}
 });
 
 /************ 사이드메뉴, 푸터메뉴 클릭 시 화면 이동 ************/
