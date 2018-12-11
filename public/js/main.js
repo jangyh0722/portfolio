@@ -220,3 +220,15 @@ $(".cl_menu4").click(function(){
 	var position = $("#window4").offset();
 	$("body, html").stop().animate({scrollTop:position.top},500);
 });
+
+
+emailjs.init("user_s2V9vrGK6oGVtUHZzxycP");
+
+$('#contact-form').on('submit', function(e) {
+		e.preventDefault();
+		$("input[name='contact_number']").val(Math.random() * 100000 | 0);
+		emailjs.sendForm("jangyh07222_gmail_com", 'template_DpXDBrEw', this);
+		alert("메일을 성공적으로 전송하였습니다. \n빠른 시간안에 답변 드리겠습니다. 감사합니다.");
+		$("#myModal").hide();
+});
+

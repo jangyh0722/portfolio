@@ -14,18 +14,20 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 </head>
 
 <body>
   <header id="window0">
-    <video autoplay loop muted>
-      <source src="img/main_video.mp4" type="video/mp4" />
-      <source src="img/main_video.webm" type="video/webm" />
-      <source src="img/main_video.ogg" type="video/ogg" />
-      <source src="img/main_video.ovg" type="video/ovg" />
-    </video>
+    <div class="movie_box">
+        <video autoplay loop muted>
+          <source src="img/main_video.mp4" type="video/mp4" />
+          <source src="img/main_video.webm" type="video/webm" />
+          <source src="img/main_video.ogg" type="video/ogg" />
+          <source src="img/main_video.ovg" type="video/ovg" />
+        </video>
+    </div>
+    
     <div class="wrap">
       <ul class="top_menu clear">
         <li class="ham_menu clear">
@@ -81,13 +83,14 @@
       <!-- Modal content -->
       <div class="modal-content">
         <p>CONTACT</p>
-        <form class="cont_form" method="post" action="#">
-          <input class="input" type="text" name="name" placeholder="NAME">
-          <input class="input" type="text" name="email" placeholder="EMAIL">
-          <input class="input" type="text" name="phone" placeholder="PHONE">
-          <textarea class="input" name="message" placeholder="MESSAGE"></textarea>
+        <form class="cont_form" id="contact-form">
+          <input type="hidden" name="contact_number">
+          <input class="input" type="text" name="user_name" placeholder="NAME">
+          <input class="input" type="email" name="user_email" placeholder="EMAIL">
+          <input class="input" type="text" name="user_phone" placeholder="PHONE">
+          <textarea class="input" name="contact" placeholder="MESSAGE"></textarea>
           <span class="close">CloseX</span>
-          <span class="send">Send></span>
+          <button type="submit" class="send">Send></button>
         </form>
       </div>
     </div>
@@ -126,6 +129,7 @@
         </ul>
       </div>
       <div class="map">
+        <!--
         <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=DyW9gUFvhrurcH3uceB3&submodules=geocoder"></script>
         <div class="map_area" id="map"></div>
         <script>
@@ -150,6 +154,7 @@
             });
           });
         </script>
+      -->
       </div>
     </div>
 
