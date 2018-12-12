@@ -28,6 +28,15 @@ window.onclick = function(event) {
 		$('html, body').off('scroll touchmove mousewheel');
 	}
 }
+/********** 모달창 메일 보내기 ***********/
+emailjs.init("user_s2V9vrGK6oGVtUHZzxycP");
+$('#contact-form').on('submit', function(e) {
+		e.preventDefault();
+		$("input[name='contact_number']").val(Math.random() * 100000 | 0);
+		emailjs.sendForm("jangyh07222_gmail_com", 'template_DpXDBrEw', this);
+		alert("메일을 성공적으로 전송하였습니다. \n빠른 시간안에 답변 드리겠습니다. 감사합니다.");
+		$("#myModal").hide();
+});
 
 /************ 메뉴 클릭 시 사이드 메뉴 노출 ************/
 //햄버거 메뉴 오버시 효과
@@ -158,7 +167,7 @@ $(window).scroll(function(){
 		noteChk = false;
 		}
 	}
-	else($(window).width() > 992)
+	else( $(window).width() > 992)
 	{
 		var gap3 = $("html, body").scrollTop();
 		if(gap3 > 2800 && noteChk) {
@@ -222,13 +231,5 @@ $(".cl_menu4").click(function(){
 });
 
 
-emailjs.init("user_s2V9vrGK6oGVtUHZzxycP");
 
-$('#contact-form').on('submit', function(e) {
-		e.preventDefault();
-		$("input[name='contact_number']").val(Math.random() * 100000 | 0);
-		emailjs.sendForm("jangyh07222_gmail_com", 'template_DpXDBrEw', this);
-		alert("메일을 성공적으로 전송하였습니다. \n빠른 시간안에 답변 드리겠습니다. 감사합니다.");
-		$("#myModal").hide();
-});
 

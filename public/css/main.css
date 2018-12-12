@@ -303,10 +303,12 @@ section{width:100%; height: 969px; position: relative;}
 @media screen and (max-width:992px) {
     .main_txt{top:40%;}
     .wrap .main_txt .title{font-size: 50px; font-weight: 500; letter-spacing: -2px;}
-    .about_po{display: none;}
+    
     .about{position: static;}
-    .about .about_txt{width:100%; float: none; padding-top:50%;}
-    .about .map{width:100%; float: none; padding: 70px 0;}
+    .about_po{height:390px;}
+    .about .about_txt{width:100%; height:auto; float: none; padding:5% 0; display:table;}
+    .about .map{width:100%; float: none; padding: 0;}
+
     #map{width:100%; height:260px; background-color: #000; float: right;}
     .skills{height: auto;}
     .skills_lf{width:100%;float: none; padding:20% 0}
@@ -334,22 +336,40 @@ section{width:100%; height: 969px; position: relative;}
     .wrap .main_txt .title{font-size: 56px; margin:0 0 5px 0; line-height: 60px;}
     .wrap .main_txt .sub_title{font-size: 16px; margin-bottom: 20px; letter-spacing: 5px;}
     .wrap .main_txt .sub_title .sub_title_sub{display: block; margin-top:0;}
-    .about .about_txt{padding-top:60%;}
-    .port .port_txt{font-size: 36px;letter-spacing: 14px;}
-    .about .about_txt ul li:first-child{font-size: 36px;letter-spacing: 14px;}
-    .skills_lf .inner > span{font-size: 36px;letter-spacing: 14px; margin-bottom: 70px;}
+
+    .port .port_txt{font-size: 28px;letter-spacing: 14px; height:150px;}
+    .port .some li > a > div > img{ width:220%;}
+
+    .about_po{height:390px;}
+    .about .about_txt ul li:first-child{font-size: 28px;letter-spacing: 14px;}
+
+    .skills_lf .inner > span{font-size: 28px;letter-spacing: 14px; margin-bottom: 70px;}
     .skills_lf .inner .skills_li_po{width:62%; left: 17%;}
-    .special{height: 88%;}
-    .special .note_bor{right:14%;}
-    .special .note_opa{height: 670px;}
+    .special{height: 80%; margin-bottom: 30px;}
+    .special .note_bor{left:50%; width:85%;
+        transform: translateX(-50%); 
+        -webkit-transform: translateX(-50%); 
+        -moz-transform: translateX(-50%); 
+        -o-transform: translateX(-50%);}
+    .special .note_opa{height: 670px; width:100%;}
     .special .note_side{bottom: -10px;}
-    .special .mac{top:530px; left:17%;}
-    .special .mac img{width:90%;}
-    .special span{font-size: 36px;letter-spacing: 14px; margin-bottom: 70px;}
+    .special .note_bor p{font-size: 14px; width:95%; top:5%; left: 50%; text-align: center;
+        transform: translate(-50%, -5%); 
+        -webkit-transform: translate(-50%, -5%); 
+        -moz-transform: translate(-50%, -5%); 
+        -o-transform: translate(-50%, -5%);}
+    .special .mac{top:450px; left:0;}
+
+    .special .mac img{width:85%;}
+    .special span{font-size: 28px;letter-spacing: 14px; padding:40px 0;}
     .foot {width:90%;}
     video {width: 100%;}
-    .modal-content {width: 100%; height: 100%; margin: 0 auto;}
-    .modal-content .cont_form textarea[name="contact"]{height: 30%;}   
+    .modal-content {width: 100%; height: 95%; margin: 0 auto;}
+    .modal-content .cont_form textarea[name="contact"]{height: 50%;}   
+    .foot{ margin:0 auto;font-size: 12px; }
+    .foot .foot_logo {margin: 15px auto;}
+    .foot .foot_list li:nth-child(even){font-size:12px; margin:0 6px;}
+    address{margin-bottom: 30px;}
 }
 @media screen and (max-width:480px){
     .wrap .main_txt .title{margin:0 0 10px 0;}
@@ -374,6 +394,7 @@ section{width:100%; height: 969px; position: relative;}
         -webkit-transition: .3s, -webkit-transform .3s;
         transition: .3s, transform .3s;
     }
+    .about_po{height:415px;}
     .about .map{padding:0;}
     .about .keyword img{
         top: -5%;
@@ -426,11 +447,12 @@ section{width:100%; height: 969px; position: relative;}
         transform: translate(-50%, -106%); 
         -webkit-transform: translate(-50%, -106%); 
         -moz-transform: translate(-50%, -106%); 
-        -o-transform: translate(-50%, -106%); }
+        -o-transform: translate(-50%, -106%);}
     .about .map{padding-top:15px;}
 
     .port .port_txt{height:100px; font-size: 32px;letter-spacing: 12px;}
     .port .more {height:50px;}
+    .port .some li > a > div > img{ width:250%;}
 
     .skills_lf .inner > span{font-size: 32px;letter-spacing: 12px;}
     .skills_lf .inner .skills_li_po{width:43%; left: 30%;}
@@ -441,12 +463,21 @@ section{width:100%; height: 969px; position: relative;}
     .special span{letter-spacing: 10px;}
     .special .mac img{width:60%;}
     .special{height: 65%;}
-    .special .note_bor{right:7%;}
-    .special .note_side{bottom: -210px;}
+    
+    .special .note_side{bottom: -180px;}
     .special .mac{top:440px; left:17%;}
-    .special .note_opa{height: 470px; width: 400px;}
-    .special .note_bor p{position: absolute; top:60px; left: 10%;font-size: 14px; font-weight: 400; letter-spacing: 0; line-height: 30px; text-align: center;}
+    .special .note_opa{height: 500px; width: 100%;}
     .special{background-attachment:scroll;}
+    .special .note_bor {left :50%; width:95%;
+        transform: translateX(-50%); 
+        -webkit-transform: translateX(-50%); 
+        -moz-transform: translateX(-50%); 
+        -o-transform: translateX(-50%);}
+    .special .note_bor p{font-size: 10px; width:95%; letter-spacing: 1px; line-height: 30px; text-align: center;}
+    .modal-content {width: 100%; height: 95%; margin: 0 auto;}
+    .modal-content .cont_form textarea[name="contact"]{height: 50%;}  
 
-    .modal-content .cont_form textarea[name="contact"]{height: 70%; margin-bottom: 3%}
+    .foot{width:98%;}
+    .foot .foot_list li:first-child{display: none;}
+    .foot .foot_list li:nth-child(2){display: none;}
 }
