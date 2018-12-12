@@ -157,24 +157,14 @@ $(window).scroll(function(){
 /********** Special Note 효과 **********/
 var noteChk = true;
 $(window).scroll(function(){
-
-	if(768 < $(window).width() <= 992)
-	{
-		var gap3 = $("html, body").scrollTop();
-		if(gap3 > 5000 && noteChk) {
-		$(".note_bor").stop().animate({"bottom": 0}, 2000);
-		$(".mac").stop().animate({"left":"21%", "opacity":1}, 1500);
-		noteChk = false;
-		}
-	}
-	else( $(window).width() > 992)
+if( $(window).width() > 768)
 	{
 		var gap3 = $("html, body").scrollTop();
 		if(gap3 > 2800 && noteChk) {
 			$(".note_bor").stop().animate({"bottom": 0}, 2000);
 			$(".mac").stop().animate({"left":"17%", "opacity":1}, 1500);
 			noteChk = false;
-	}
+	}	
 }
 });
 

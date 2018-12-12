@@ -315,8 +315,7 @@ section{width:100%; height: 969px; position: relative;}
     .skills_rig{width:100%;float: none; padding:4% 0}
     .skills_rig .rig_inner .skills_bor .skills_wrap2{margin:50px auto;}
     .port .some li{cursor: pointer;}
-    .special .note_opa{height: 500px;}
-    .special .note_side{bottom: -180px;}
+
     .foot {width:80%;}
 }
 @media screen and (max-width:768px) {
@@ -372,10 +371,13 @@ section{width:100%; height: 969px; position: relative;}
         -webkit-transform: translate(-50%, -5%); 
         -moz-transform: translate(-50%, -5%); 
         -o-transform: translate(-50%, -5%);}
-    .special .mac{top:450px; left:0;}
-    .special .mac img{width:85%;}
     .special span{font-size: 28px;letter-spacing: 14px; padding:40px 0;}
-    .special .mac{left:10%; opacity: 1;}
+    .special .mac{min-width: 400px; height:0; opacity: 1; left:50%; top:450px;
+        transform: translateX(-50%); 
+        -webkit-transform: translateX(-50%); 
+        -moz-transform: translateX(-50%); 
+        -o-transform: translateX(-50%);}
+    .special .mac img{width:100%;}
     .special .note_bor{bottom: 0};
 
     .foot {width:90%;}
@@ -476,13 +478,11 @@ section{width:100%; height: 969px; position: relative;}
     .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li:first-child > div{padding-top: 5px;}
     .skills_rig .rig_inner .skills_bor .skills_wrap2{margin:30px; width:90%;}
 
+    .special{background-attachment:scroll; height: 65%;}
+    .special .mac{min-width: 300px; top:400px;}
     .special span{letter-spacing: 10px;}
-    .special .mac img{width:60%;}
-    .special{height: 65%;}
     .special .note_side{bottom: -180px;}
-    .special .mac{top:440px; left:17%;}
     .special .note_opa{height: 500px; width: 100%;}
-    .special{background-attachment:scroll;}
     .special .note_bor {left :50%; width:95%;
         transform: translateX(-50%); 
         -webkit-transform: translateX(-50%); 
