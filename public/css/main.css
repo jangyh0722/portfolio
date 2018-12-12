@@ -348,16 +348,16 @@ section{width:100%; height: 969px; position: relative;}
     .skills_lf .inner .skills_li_po{width:62%; left: 17%;}
     .prog_inner1{width:90%;}
     .prog_inner2{width:90%;}
-    .prog_inner3{width:40%;}
-    .prog_inner4{width:30%;}
-    .prog_inner5{width:65%;}
-    .prog_inner6{width:65%;}
+    .prog_inner3{width:65%;}
+    .prog_inner4{width:55%;}
+    .prog_inner5{width:60%;}
+    .prog_inner6{width:60%;}
     .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(1) .in li:last-child,
     .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(2) .in li:last-child{left: -9%; opacity: 1;}
-    .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(3) .in li:last-child{left: -53.5%; opacity: 1;}
-    .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(4) .in li:last-child{left: -62.5%; opacity: 1;}
+    .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(3) .in li:last-child{left: -31.5%; opacity: 1;}
+    .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(4) .in li:last-child{left: -40%; opacity: 1;}
     .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(5) .in li:last-child,
-    .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(6) .in li:last-child{left: -31.2%; opacity: 1;}
+    .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(6) .in li:last-child{left: -35.5%; opacity: 1;}
 
     .special{height: 80%; margin-bottom: 30px;}
     .special .note_bor{left:50%; width:85%;
@@ -375,7 +375,7 @@ section{width:100%; height: 969px; position: relative;}
     .special .mac{top:450px; left:0;}
     .special .mac img{width:85%;}
     .special span{font-size: 28px;letter-spacing: 14px; padding:40px 0;}
-    .special .mac{left:21%; opacity: 1;}
+    .special .mac{left:10%; opacity: 1;}
     .special .note_bor{bottom: 0};
 
     .foot {width:90%;}

@@ -142,14 +142,14 @@ $(window).scroll(function(){
 	if(gap2 > 1800 && progChk) {
 		$(".prog_inner1").stop().animate({"width":"90%"}, 2500);
 		$(".prog_inner2").stop().animate({"width":"90%"}, 2500);
-		$(".prog_inner3").stop().animate({"width":"40%"}, 2500);
-		$(".prog_inner4").stop().animate({"width":"30%"}, 2500);
-		$(".prog_inner5").stop().animate({"width":"65%"}, 2500);
-		$(".prog_inner6").stop().animate({"width":"65%"}, 2500);
+		$(".prog_inner3").stop().animate({"width":"65%"}, 2500);
+		$(".prog_inner4").stop().animate({"width":"55%"}, 2500);
+		$(".prog_inner5").stop().animate({"width":"60%"}, 2500);
+		$(".prog_inner6").stop().animate({"width":"60%"}, 2500);
 		$(".skills_prog li:nth-child(2) .in li:last-child, .skills_prog li:nth-child(1) .in li:last-child").stop().animate({"left":"-9%", "opacity":1}, 2500);
-		$(".skills_prog li:nth-child(3) .in li:last-child").stop().animate({"left":"-53.5%", "opacity":1}, 2500);
-		$(".skills_prog li:nth-child(4) .in li:last-child").stop().animate({"left":"-62.5%", "opacity":1}, 2500);
-		$(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) .in li:last-child").stop().animate({"left":"-31.2%", "opacity":1}, 2500);
+		$(".skills_prog li:nth-child(3) .in li:last-child").stop().animate({"left":"-31.5%", "opacity":1}, 2500);
+		$(".skills_prog li:nth-child(4) .in li:last-child").stop().animate({"left":"-40%", "opacity":1}, 2500);
+		$(".skills_prog li:nth-child(5) .in li:last-child, .skills_prog li:nth-child(6) .in li:last-child").stop().animate({"left":"-35.5%", "opacity":1}, 2500);
 		progChk = false;
 	}
 });
