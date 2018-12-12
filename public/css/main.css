@@ -1,5 +1,4 @@
 @import 'base.css';
-
 /***********모달창************/
 /* The Modal (background) */
 .modal {
@@ -35,16 +34,8 @@
 .modal-content .cont_form .close {padding:1% 0; color: #fff; font-size: 16px; float: left; font-weight: 200; cursor: pointer; letter-spacing: 3px; opacity: 1;}
 .modal-content .cont_form .close:hover{border-bottom: 1px solid #fff; opacity: 1;}
 
-
 .movie_box {margin:0 auto; position: relative; width:100%; height:100%; padding-bottom: 75%; overflow: hidden;}
-
-video {
-    position: absolute;
-    top: -5.6%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+video {position: absolute;top: -5.6%;left: 0;width: 100%;height: 100%;}
 header{color:#fff; height: auto; position: relative;}
 .top_menu, .main_txt{padding:50px; position: relative; z-index: 1;}
 .top_menu{position: absolute; top:0;}
@@ -72,10 +63,7 @@ header{color:#fff; height: auto; position: relative;}
     -webkit-transition: .3s, -webkit-transform .3s;
     transition: .3s, transform .3s;
 }
-.wrap .main_txt .cont_btn a:hover{
-    background-color: #f3b47f; 
-    color:#fff;
-}
+.wrap .main_txt .cont_btn a:hover{background-color: #f3b47f; color:#fff;}
 .sub_menu{
     background-color: #fff; 
     width:300px; 
@@ -206,7 +194,6 @@ section{width:100%; height: 969px; position: relative;}
 .about .map{width:50%; float: right; padding: 70px 0;}
 #map{width:82%; height:260px; background-color: #000; float: right;}
 
-
 /********************  portfolio 영역  *******************/
 .port{position: relative;}
 .port .some{width:100%;overflow: hidden; background-color: #000;}
@@ -247,7 +234,6 @@ section{width:100%; height: 969px; position: relative;}
 .skills_ban li{width: 60px; height: 68px; float: left; margin-left: 100px;}
 .skills_ban li:first-child{margin-left:50px;}
 .skills_ban li img{width: 100%;}
-
 .skills_rig{width:56.25%; height: 100%; float: right; background-color: #222; display: table; color:#fff; }
 .skills_rig .rig_inner{width:inherit; height: inherit; display: table-cell; vertical-align: middle;}
 .skills_rig .rig_inner .skills_bor{border:1px solid #fff; width:94%; height: 89%; margin:0 auto;}
@@ -268,9 +254,7 @@ section{width:100%; height: 969px; position: relative;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(4) .in li:last-child{left: -90%; opacity: 0;}
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(5) .in li:last-child,
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog li:nth-child(6) .in li:last-child{left: -90%; opacity: 0;}
-
 .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li .prog{width:auto;}
-
 .prog_inner1, .prog_inner4 {background: linear-gradient( to right, #00ffcc, #03c5fd ); color:#00ffcc; display: inline-block;}
 .prog_inner2, .prog_inner5 {background: linear-gradient( to right, #03c5fd, #ae00ff ); color:#03c5fd;}
 .prog_inner3, .prog_inner6 {background: linear-gradient( to right, #ae00ff, #ff6868 ); color:#ae00ff;}
@@ -289,7 +273,6 @@ section{width:100%; height: 969px; position: relative;}
     background-repeat: no-repeat; 
     background-size: cover; 
     background-attachment: fixed;
-
     position: relative; 
     margin-bottom: 60px; 
     overflow: hidden;
@@ -298,12 +281,10 @@ section{width:100%; height: 969px; position: relative;}
   .special .mac{max-width:789px; min-width: 500px; height:460px; position: absolute; top:230px; opacity: 0;}
   .special .mac img{width:100%;}
   .special div{float: left;}
- 
   .special .note_opa{background-color: #000; opacity: 0.2; height: 680px; width: 545px; }
   .special .note_bor{border: 2px solid #fff; position: relative; position: absolute; bottom: -681px; right:22.5%;}
   .special .note_bor p{position: absolute; top:60px; left: 50px; color:#fff; font-size: 16px; font-weight: 400; letter-spacing: 2px; line-height: 40px; text-align: right; z-index: 111;}
   .special .note_side{position: absolute; bottom: -2px; right:-18px;;}
-
   /********************  footer 영역  *******************/
   .foot{width:50%; margin:0 auto 60px auto; text-align: center; font-size: 16px; color:#222; font-weight: 400; overflow: hidden;}
   .foot .foot_logo {display: block; margin: 30px auto;}
@@ -312,8 +293,6 @@ section{width:100%; height: 969px; position: relative;}
   .foot .foot_list li:nth-child(even){font-size:12px; margin:3px 15px;}
   .foot .foot_list li:nth-child(odd){letter-spacing: 1px; cursor: pointer;}
   .foot .foot_list li:nth-child(odd):hover{color:#f3b47f;}
-
-
 /******************** 반응형 *********************/
 @media screen and (max-width:1279px) {
     .about .about_txt{width:35%; }
@@ -339,14 +318,8 @@ section{width:100%; height: 969px; position: relative;}
     .foot {width:80%;}
 }
 @media screen and (max-width:768px) {
-    element.style {
-        top: 0px;
-        padding: 0;
-        opacity: 0.8;
-    }
-    .top_menu{
-        padding: 15px;
-    }
+    element.style {top: 0px;padding: 0;opacity: 0.8;}
+    .top_menu{padding: 15px;}
     .wrap .top_menu .logo{ text-align: center;}
     .main_txt{
         padding:0;
@@ -375,13 +348,10 @@ section{width:100%; height: 969px; position: relative;}
     .special span{font-size: 36px;letter-spacing: 14px; margin-bottom: 70px;}
     .foot {width:90%;}
     video {width: 100%;}
-
     .modal-content {width: 100%; height: 100%; margin: 0 auto;}
-    .modal-content .cont_form textarea[name="contact"]{height: 60%;}
-    
+    .modal-content .cont_form textarea[name="contact"]{height: 30%;}   
 }
 @media screen and (max-width:480px){
-
     .wrap .main_txt .title{margin:0 0 10px 0;}
     .wrap .main_txt .sub_title{margin-bottom: 15px;}
     .wrap .main_txt .title{font-size: 40px; margin:0 0 5px 0; line-height: 60px;}
@@ -404,7 +374,6 @@ section{width:100%; height: 969px; position: relative;}
         -webkit-transition: .3s, -webkit-transform .3s;
         transition: .3s, transform .3s;
     }
-    
     .about .map{padding:0;}
     .about .keyword img{
         top: -5%;
@@ -477,10 +446,7 @@ section{width:100%; height: 969px; position: relative;}
     .special .mac{top:440px; left:17%;}
     .special .note_opa{height: 470px; width: 400px;}
     .special .note_bor p{position: absolute; top:60px; left: 10%;font-size: 14px; font-weight: 400; letter-spacing: 0; line-height: 30px; text-align: center;}
-    .special{
-        background-attachment:scroll;
-      }
+    .special{background-attachment:scroll;}
 
     .modal-content .cont_form textarea[name="contact"]{height: 70%; margin-bottom: 3%}
- 
 }
