@@ -478,7 +478,7 @@ section{width:100%; height:100%; position: relative;}
     .skills_rig .rig_inner .skills_bor .skills_wrap2 .skills_prog .in li:first-child > div{padding-top: 5px;}
     .skills_rig .rig_inner .skills_bor .skills_wrap2{margin:30px; width:90%;}
 
-    .special{background-attachment:scroll; height: 65%;}
+    .special{background-attachment:scroll; height: 70%;}
     .special .mac{min-width: 300px; top:400px;}
     .special span{letter-spacing: 10px;}
     .special .note_side{bottom: -180px;}
