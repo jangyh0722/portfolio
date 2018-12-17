@@ -320,9 +320,11 @@ section{width:100%; height:100%; position: relative;}
 }
 @media screen and (max-width:768px) {
     element.style {top: 0px;padding: 0;opacity: 0.8;}
-    .top_menu{padding: 15px;}
-    .wrap .top_menu .ham_menu .bars{ margin-right:15px;}
-    .wrap .top_menu .logo{ text-align: center;}
+    .top_menu{padding: 15px; text-align:center; width:100%;}
+    .wrap .top_menu li{float: none;}
+    .wrap .top_menu .ham_menu {display: inline-block; float: left;}
+    .wrap .top_menu .ham_menu .bars{ margin-right:0;}
+    .wrap .top_menu .logo{ display: inline-block; padding-right:25px;}
     .main_txt{
         padding:0;
         text-align: center;
@@ -364,8 +366,8 @@ section{width:100%; height:100%; position: relative;}
         -webkit-transform: translateX(-50%); 
         -moz-transform: translateX(-50%); 
         -o-transform: translateX(-50%);}
-    .special .note_opa{height: 670px; width:100%;}
-    .special .note_side{bottom: -10px;}
+    .special .note_opa{height: 570px; width:100%;}
+    .special .note_side{bottom: -110px;}
     .special .note_bor p{font-size: 14px; width:95%; top:5%; left: 50%; text-align: center;
         transform: translate(-50%, -5%); 
         -webkit-transform: translate(-50%, -5%); 
